@@ -29,16 +29,19 @@ module.exports = {
 
       'max-md': {'max': '768px'},
       // => @media (max-width: 1535px) { ... }
-    },
+    },    
     extend: {
+      fontSize: {
+        md: '1.1rem',
+      },
       colors: {
         primary: '#9932cc',
         primaryLight: '#c042ff',
         secondary: '#311042',
         body: 'rgb(253, 245, 255)',
-        'gray-700': '#273444',
-        gray: '#8492a6',
-        'gray-50': '#f8fafc',
+        // 'gray-700': '#273444',
+        // gray: '#8492a6',
+        // 'gray-50': '#f8fafc',
       },
       width: {
         130: '62rem',
@@ -52,6 +55,7 @@ module.exports = {
       },
       boxShadow: {
         'top': '0 -1px 4px rgba(0, 0, 0, 0.15)',
+        // 'bt': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',  
       },
     },
   },
