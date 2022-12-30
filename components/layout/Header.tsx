@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ScrollProps } from '../common/interfaces';
 
-export function Header() {
-  const [scrollup, setScrollup] = useState(true);
+export function Header({ scrollup, setScrollup }: ScrollProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
 
@@ -18,7 +18,7 @@ export function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-  }, [scrollup]);
+  });
 
   return (
     <>
@@ -27,16 +27,15 @@ export function Header() {
       </Head>
 
       <header
-        className={`max-md:shadow-top fixed bottom-0 md:top-0 inset-x-0 w-full font-medium bg-body z-[100] ${
+        className={`max-md:shadow-top fixed max-md:bottom-0 md:top-0 inset-x-0 w-full font-medium bg-body z-[100] ${
           scrollup && 'shadow-lg'
         }`}
       >
-        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-4 md:px-10 lg:px-20 py-3">
-          <a href="#home" className="text-primary text-2xl md:text-3xl">
+        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-2 md:px-10 lg:px-20 py-3">
+          <Link href="/#home" className="text-primary text-2xl md:text-3xl">
             atuProsper.
-          </a>
+          </Link>
 
-          {/* <div className="flex items-center gap-5"> */}
           <div
             className={`max-md:fixed max-md:left-0 max-md:w-full max-md:bg-body max-md:shadow-top max-md:p-6 max-md:rounded-t-3xl max-md:z-[1000] max-md:ease-in-out max-md:duration-300 md:ml-auto ${
               menuOpen ? 'max-md:bottom-0' : 'max-md:bottom-[-100%]'
@@ -153,10 +152,7 @@ export function Header() {
           {/* </div> */}
 
           <div className="max-md:flex max-md:items-center max-md:gap-5">
-            <div
-              className="changeTheme"
-              onClick={() => setDarkTheme(!darkTheme)}
-            >
+            <div className="md:mt-1" onClick={() => setDarkTheme(!darkTheme)}>
               {darkTheme ? (
                 <Image
                   src="/assets/icons/moon_icon.svg"

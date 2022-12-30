@@ -3,7 +3,7 @@ export interface SeoProps {
   pageDescription?: string;
 }
 
-// export interface HeaderProps {
-//   menuOpen?: boolean;
-//   setMenuOpen: (menuOpen: boolean) => void;
-// }
+export interface ScrollProps {
+  scrollup?: boolean;
+  setScrollup: (scrollup: boolean) => void;
+}

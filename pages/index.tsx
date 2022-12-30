@@ -1,3 +1,4 @@
+import { Banner } from '../components/home/Banner';
 import SEO from '../components/Seo';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       />
 
       <main>
-        <div className="text-3xl text-green-600 p-2">Hello Devs</div>
+        <Banner />
       </main>
     </>
   );
