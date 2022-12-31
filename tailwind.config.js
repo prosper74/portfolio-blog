@@ -2,8 +2,8 @@
 module.exports = {
   enabled: process.env.NODE_ENV === 'production',
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   options: {
     safelist: [],
@@ -27,9 +27,9 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
 
-      'max-md': {'max': '768px'},
+      'max-md': { max: '768px' },
       // => @media (max-width: 1535px) { ... }
-    },    
+    },
     extend: {
       fontSize: {
         md: '1.1rem',
@@ -54,11 +54,19 @@ module.exports = {
         128: '30rem',
       },
       boxShadow: {
-        'top': '0 -1px 4px rgba(0, 0, 0, 0.15)',
-        // 'bt': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',  
+        top: '0 -1px 4px rgba(0, 0, 0, 0.15)',
+        button: '0 4px 4px rgba(0, 0, 0, 0.15)',
+      },
+
+      gridTemplateColumns: {
+        101: '0.5fr 3fr',
+      },
+      gridColumn: {
+        101: '1 / 3',
+        initial: 'initial',
       },
     },
   },
 
   darkMode: `class`,
-}
+};
