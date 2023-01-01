@@ -2,11 +2,14 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
 import { ScrollProps } from '../common/interfaces';
 
 export function Header({ scrollup, setScrollup }: ScrollProps) {
+  const { systemTheme, theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY >= 80) {
@@ -17,8 +20,42 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
   };
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   });
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    if (currentTheme === 'dark') {
+      return (
+        <Image
+          src="/assets/icons/moon_icon.svg"
+          alt="user icon"
+          width={22}
+          height={22}
+          className="ease-in-out"
+          onClick={() => setTheme('light')}
+        />
+      );
+    } else {
+      return (
+        <Image
+          src="/assets/icons/sun_icon.svg"
+          alt="user icon"
+          width={22}
+          height={22}
+          className="ease-in-out"
+          onClick={() => setTheme('dark')}
+        />
+      );
+    }
+  };
 
   return (
     <>
@@ -158,28 +195,13 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               />
             </button>
           </div>
-          {/* </div> */}
 
           <div className="max-md:flex max-md:items-center max-md:gap-5">
-            <div className="md:mt-1" onClick={() => setDarkTheme(!darkTheme)}>
-              {darkTheme ? (
-                <Image
-                  src="/assets/icons/moon_icon.svg"
-                  alt="user icon"
-                  width={22}
-                  height={22}
-                  className="ease-in-out"
-                />
-              ) : (
-                <Image
-                  src="/assets/icons/sun_icon.svg"
-                  alt="user icon"
-                  width={22}
-                  height={22}
-                  className="ease-in-out"
-                />
-              )}
-            </div>
+            <button
+              className="md:mt-2"
+            >
+              {renderThemeChanger()}
+            </button>
             <button
               className="md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}

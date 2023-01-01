@@ -120,9 +120,7 @@ export function Banner() {
       >
         <div className="col-101 sm:col-initial">
           <h1
-            className={`text-xl md:text-2xl font-bold mb-3 ${
-              darkTheme ? 'text-body' : 'text-gray-700'
-            }`}
+            className="text-xl md:text-2xl font-bold mb-3"
           >
             <span>Hi, I&lsquo;m</span> <br />
             <span className="text-[2.8rem] md:text-7xl">Prosper Atu</span>
