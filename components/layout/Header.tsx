@@ -32,7 +32,11 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
         }`}
       >
         <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-2 md:px-10 lg:px-20 py-3">
-          <Link href="/#home" className="text-primary text-2xl md:text-3xl">
+          <Link
+            href="/#home"
+            scroll={false}
+            className="text-primary text-2xl md:text-3xl"
+          >
             atuProsper.
           </Link>
 
@@ -48,6 +52,7 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               <li>
                 <Link
                   href="/#about"
+                  scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
@@ -63,6 +68,7 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               <li>
                 <Link
                   href="/#skills"
+                  scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
@@ -78,6 +84,7 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               <li>
                 <Link
                   href="/#services"
+                  scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
@@ -93,6 +100,7 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               <li>
                 <Link
                   href="/#portfolio"
+                  scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
@@ -123,6 +131,7 @@ export function Header({ scrollup, setScrollup }: ScrollProps) {
               <li>
                 <Link
                   href="/#contact"
+                  scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
