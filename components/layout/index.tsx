@@ -1,8 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import { pageVariants } from '../common/animationVariants';
 
 export default function Layout({ children }: any) {
   const [scrollup, setScrollup] = useState(false);
@@ -28,9 +29,19 @@ export default function Layout({ children }: any) {
 
   return (
     <>
-      <Header scrollup={scrollup} setScrollup={setScrollup} />
-      {children}
+      <Header />
+
+      <motion.main
+        variants={pageVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
+        {children}
+      </motion.main>
+
       <Footer />
+
       <button onClick={() => handleScrollToTop()}>
         <Image
           src="/assets/icons/arrow_up_icon.svg"

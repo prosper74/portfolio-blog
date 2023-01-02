@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import SEO from '../components/Seo';
 
 export default function Home() {
@@ -9,7 +10,31 @@ export default function Home() {
       />
 
       <main>
-        <div className="text-3xl text-green-600 p-2">Blog posts</div>
+        <motion.div
+          initial={{ y: '100vh' }}
+          animate={{ y: 0 }}
+          transition={{
+            delay: 0.5,
+            duration: 0.5,
+            type: 'spring',
+            stiffness: 120,
+          }}
+          className="text-xl md:text-2xl mt-4"
+        >
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            beatae, pariatur esse unde blanditiis saepe soluta consequuntur
+            dicta cum, totam aliquid quibusdam. Tempore consequatur iusto
+            consectetur, illo odio porro cumque!
+          </p>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            beatae, pariatur esse unde blanditiis saepe soluta consequuntur
+            dicta cum, totam aliquid quibusdam. Tempore consequatur iusto
+            consectetur, illo odio porro cumque!
+          </p>
+        </motion.div>
       </main>
     </>
   );
