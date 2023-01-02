@@ -8,7 +8,6 @@ import { ScrollProps } from '../common/interfaces';
 export function Header({ scrollup, setScrollup }: ScrollProps) {
   const { systemTheme, theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkTheme, setDarkTheme] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const handleScroll = () => {

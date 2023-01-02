@@ -1,26 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
 
 export function Banner() {
-  const [darkTheme, setDarkTheme] = useState(false);
-  // const textRef = useRef();
-
-  // useEffect(() => {
-  //   return init(textRef.current, {
-  //     showCursor: true,
-  //     backSpeed: 60,
-  //     backDelay: 2500,
-  //     strings: [
-  //       'Frontend Developer',
-  //       'Graphics Designer',
-  //       'WordPress Developer',
-  //       'Technical Writer',
-  //     ],
-  //   });
-  // }, []);
-
   return (
     <>
       {/* Banner section  */}
@@ -40,8 +22,8 @@ export function Banner() {
                 <Image
                   src="/assets/icons/github_light_icon.svg"
                   alt="github icon"
-                  width={22}
-                  height={22}
+                  width={27}
+                  height={27}
                 />
               </a>
               <a
@@ -53,8 +35,8 @@ export function Banner() {
                 <Image
                   src="/assets/icons/stackoverflow_icon.svg"
                   alt="stackoverflow icon"
-                  width={22}
-                  height={22}
+                  width={27}
+                  height={27}
                 />
               </a>
               <a
@@ -66,8 +48,8 @@ export function Banner() {
                 <Image
                   src="/assets/icons/linkedin_icon.svg"
                   alt="linkedin icon"
-                  width={22}
-                  height={22}
+                  width={27}
+                  height={27}
                 />
               </a>
               <a
@@ -79,8 +61,8 @@ export function Banner() {
                 <Image
                   src="/assets/icons/twitter_icon.svg"
                   alt="twitter icon"
-                  width={22}
-                  height={22}
+                  width={27}
+                  height={27}
                 />
               </a>
             </div>
@@ -119,13 +101,11 @@ export function Banner() {
         className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-3"
       >
         <div className="col-101 sm:col-initial">
-          <h1
-            className="text-xl md:text-2xl font-bold mb-3"
-          >
+          <h1 className="text-xl md:text-2xl font-bold mb-3">
             <span>Hi, I&lsquo;m</span> <br />
             <span className="text-[2.8rem] md:text-7xl">Prosper Atu</span>
           </h1>
-          <div className="font-mono text-gray-700 text-lg xs:text-2xl md:text-4xl flex space-x-3">
+          <div className="font-mono text-lg xs:text-2xl md:text-4xl flex space-x-3">
             <h4> A </h4>
             <strong className="bg-primary text-body px-1">
               <Typical
@@ -139,12 +119,12 @@ export function Banner() {
                   'Technical Writer',
                   2000,
                 ]}
-                wrapper="p"
+                wrapper="span"
                 loop={Infinity}
               />
             </strong>
           </div>
-          <div className="text-gray-600 text-xl md:text-2xl mt-4">
+          <div className="text-xl md:text-2xl mt-4">
             <p>
               I have over four (4) years of experience as a WordPress Developer
               and Graphics Designer. I also have over two (2) years of
@@ -161,10 +141,10 @@ export function Banner() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 items-center text-gray-600 my-12">
+          <div className="grid grid-cols-3 items-center my-12 text-base xss:text-lg">
             <div className="flex flex-col items-center justify-center">
               <span className="font-bold text-3xl">04+</span>
-              <span className="text-center text-lg">
+              <span className="text-center">
                 Years <br />
                 Experience
               </span>
@@ -172,7 +152,7 @@ export function Banner() {
 
             <div className="flex flex-col items-center justify-center">
               <span className="font-bold text-3xl">15+</span>
-              <span className="text-center text-lg">
+              <span className="text-center">
                 Completed <br />
                 Projects
               </span>
@@ -180,7 +160,7 @@ export function Banner() {
 
             <div className="flex flex-col items-center justify-center">
               <span className="font-bold text-3xl">03+</span>
-              <span className="text-center text-lg">
+              <span className="text-center">
                 Companies <br />
                 Worked
               </span>
@@ -202,9 +182,11 @@ export function Banner() {
               />
             </Link>
 
-            <Link
-              href="/blog"
-              className="flex items-center justify-center py-2 px-[10px] text-lg font-semibold text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-300 hover:translate-y-[0.25rem] max-w-[210px]"
+            <a
+              href="/assets/cv/resume.pdf"
+              target="_blank"
+              className="tooltip flex items-center justify-center py-2 px-[10px] text-lg font-semibold text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-300 hover:translate-y-[0.25rem] max-w-[210px]"
+              data-tip="hello"
             >
               Download my CV
               <Image
@@ -214,7 +196,7 @@ export function Banner() {
                 height={18}
                 className="ml-1 ease-in-out duration-500 hover:translate-y-[0.25rem]"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
