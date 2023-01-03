@@ -41,9 +41,6 @@ module.exports = {
         primaryLight: '#c042ff',
         secondary: '#311042',
         body: 'rgb(253, 245, 255)',
-        // 'gray-700': '#273444',
-        // gray: '#8492a6',
-        // 'gray-50': '#f8fafc',
       },
       width: {
         130: '62rem',

@@ -1,4 +1,5 @@
 import { Banner } from '../components/home/Banner';
+import { Skills } from '../components/home/Skills';
 import SEO from '../components/Seo';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
 
       <main>
         <Banner />
+        <Skills />
       </main>
     </>
   );

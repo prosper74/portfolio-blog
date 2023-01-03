@@ -8,9 +8,9 @@ export function Banner() {
       {/* Banner section  */}
       <section
         id="home"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-3"
+        className="sm:container mx-auto px-2 md:px-10 lg:px-20 pt-10 md:pt-24"
       >
-        <div className="py-4 md:py-24 grid gap-4 md:gap-20">
+        <div className="grid gap-4 md:gap-20">
           <div className="grid grid-cols-5 items-center">
             <div className="grid auto-cols-max gap-4">
               <a
@@ -98,7 +98,7 @@ export function Banner() {
       {/* About me section  */}
       <section
         id="about"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-3"
+        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16"
       >
         <div className="col-101 sm:col-initial">
           <h1 className="text-xl md:text-2xl font-bold mb-3">
