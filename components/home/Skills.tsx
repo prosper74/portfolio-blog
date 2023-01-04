@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { skillData } from './SKillsData';
-import { ArrowDownIcon, CurlyBracketIcon } from '../common/svgIcons';
+import { ArrowDownIcon } from '../common/svgIcons';
 
 export function Skills() {
   const [toggle, setToggle] = useState(0);
@@ -13,7 +13,7 @@ export function Skills() {
         className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16"
       >
         <div>
-          <div className="text-center mb-4">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-1">
               My Technical Skills
             </h2>
@@ -47,7 +47,7 @@ export function Skills() {
                 </div>
 
                 <ul
-                  className={`py-4 px-12 shadow-lg rounded-xl opacity-100 translate-y-0 ease-in-out duration-500 delay-300 ${
+                  className={`py-4 px-12 shadow-customBox rounded-xl opacity-100 translate-y-0 ease-in-out duration-500 delay-300 ${
                     toggle !== i && 'hidden opacity-0 translate-y-10'
                   }`}
                 >

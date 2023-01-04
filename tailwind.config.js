@@ -40,7 +40,9 @@ module.exports = {
         primary: '#9932cc',
         primaryLight: '#c042ff',
         secondary: '#311042',
+        secondaryDark: '#2B0E3A',
         body: 'rgb(253, 245, 255)',
+        overlay: 'rgba(0, 0, 0, 0.5)',
       },
       width: {
         130: '62rem',
@@ -55,6 +57,7 @@ module.exports = {
       boxShadow: {
         top: '0 -1px 4px rgba(0, 0, 0, 0.15)',
         button: '0 4px 4px rgba(0, 0, 0, 0.15)',
+        customBox: '0 2px 4px rgba(0, 0, 0, 0.2)',
       },
 
       gridTemplateColumns: {

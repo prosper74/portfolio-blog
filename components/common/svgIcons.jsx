@@ -278,6 +278,23 @@ export const CurlyBracketIcon = ({ width, height, fill }) => {
   );
 };
 
+export const PulseIcon = ({ width, height, fill }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+    >
+      <path
+        fill={fill}
+        d="M27 13a3 3 0 0 0-2.816 2H20a1 1 0 0 0-.914.594l-2.768 6.228-3.341-15.039a1 1 0 0 0-1.891-.189L7.351 15H3a1 1 0 0 0 0 2h5a1 1 0 0 0 .914-.594l2.768-6.228 3.341 15.039A1 1 0 0 0 15.9 26a.848.848 0 0 0 .1 0 1 1 0 0 0 .914-.594L20.649 17h3.535A2.995 2.995 0 1 0 27 13Zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1Z"
+        data-name="Layer 2"
+      />
+    </svg>
+  );
+};
+
 export const ServerNetworkIcon = ({ width, height, fill }) => {
   return (
     <svg

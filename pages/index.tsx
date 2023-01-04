@@ -1,4 +1,5 @@
 import { Banner } from '../components/home/Banner';
+import { Services } from '../components/home/Services';
 import { Skills } from '../components/home/Skills';
 import SEO from '../components/Seo';
 
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Banner />
         <Skills />
+        <Services />
       </main>
     </>
   );
