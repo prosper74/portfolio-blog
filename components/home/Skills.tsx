@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { skillData } from './SKillsData';
+import { skillData } from './HomeDatas';
 import { ArrowDownIcon } from '../common/svgIcons';
 
 export function Skills() {
@@ -23,7 +23,7 @@ export function Skills() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-            {skillData.map((skill, i) => (
+            {skillData?.map((skill, i) => (
               <div key={i} className="">
                 <div
                   role="button"

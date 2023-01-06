@@ -1,11 +1,83 @@
 import {
   CurlyBracketIcon,
+  ServerNetworkIcon,
   WordPressIconIcon,
   GraphicsIcon,
   PulseIcon,
 } from '../common/svgIcons';
 
-export const data = [
+export const skillData = [
+  {
+    id: 1,
+    name: 'Frontend Development',
+    icon: <CurlyBracketIcon width="40" height="40" fill="#9932cc" />,
+    experience: '3+ Years experience',
+    skills: [
+      {
+        name: '🚀 HTML/CSS/JavaScript',
+      },
+      {
+        name: '🚀 SCSS, Material-UI, TailwindCSS',
+      },
+      {
+        name: '🚀 ReactJS, GatsbyJS, NextJS',
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Backend Development',
+    icon: <ServerNetworkIcon width="40" height="40" fill="#9932cc" />,
+    experience: '2+ Years experience',
+    skills: [
+      {
+        name: '🚀 NodeJs/ExpressJS',
+      },
+      {
+        name: '🚀 StrapiCMS, Headless WordPress',
+      },
+      {
+        name: '🚀 Firebase, MongoDB, PostgreSQL, MySQL',
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Web Deign - WordPress',
+    icon: <WordPressIconIcon width="40" height="40" fill="#9932cc" />,
+    experience: '4+ Years experience',
+    skills: [
+      {
+        name: '🚀 Elementor',
+      },
+      {
+        name: '🚀 WP Bakery',
+      },
+      {
+        name: '🚀 Woocommerce, e.t.c',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Graphics Design',
+    icon: <GraphicsIcon width="40" height="40" fill="#9932cc" />,
+    experience: '5+ Years experience',
+    skills: [
+      {
+        name: '🚀 Adobe Photoshop',
+      },
+      {
+        name: '🚀 Adobe Illustrator',
+      },
+      {
+        name: '🚀 Corel Draw',
+      },
+    ],
+  },
+];
+
+export const ServicesData = [
   {
     id: 1,
     icon: <WordPressIconIcon width="30" height="30" fill="#9932cc" />,
@@ -103,6 +175,34 @@ export const data = [
       {
         id: 4,
         service: 'Modify design when necessary to keep it appealing',
+      },
+    ],
+  },
+];
+
+export const PortfolioData = [
+  {
+    id: 1,
+    icon: <WordPressIconIcon width="30" height="30" fill="#9932cc" />,
+    title: 'Web Design - WordPress',
+    subtitle: 'Design, Hosting, SEO, Security',
+    description: 'Project Planning and Implementation',
+    services: [
+      {
+        id: 1,
+        service: 'Gather the project requirements and analyse them',
+      },
+      {
+        id: 2,
+        service: 'Plan the data and sketch a design',
+      },
+      {
+        id: 3,
+        service: 'Choose a theme or setup Elementor Builder if custom',
+      },
+      {
+        id: 4,
+        service: 'Design, Send for review, modify and closeout project',
       },
     ],
   },

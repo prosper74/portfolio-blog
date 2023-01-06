@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { data } from './ServicesData';
+import { motion } from 'framer-motion';
+import { ServicesData } from './HomeDatas';
 import { ArrowDownIcon, CheckIcon, CloseIcon } from '../common/svgIcons';
 
 export function Services() {
@@ -21,7 +22,7 @@ export function Services() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
-            {data.map((item, i) => (
+            {ServicesData?.map((item, i) => (
               <div
                 key={i}
                 className="relative flex flex-col content-between py-8 px-4 dark:bg-secondaryDark shadow-customBox rounded-xl transition-all"
@@ -34,7 +35,7 @@ export function Services() {
                   <p className="text-base md:text-xl">{item.subtitle}</p>
                 </div>
 
-                <button
+                <motion.button
                   className="flex items-center md:text-lg mt-auto"
                   onClick={() => setModal(i)}
                 >
@@ -42,7 +43,7 @@ export function Services() {
                   <span className="mt-1 rotate-[-90deg] hover:translate-x-1 transition-all">
                     <ArrowDownIcon width="20" height="20" fill="#9932cc" />
                   </span>
-                </button>
+                </motion.button>
 
                 <div
                   className={`fixed inset-0 bg-overlay flex justify-center items-center px-4 z-[150] transition-all ${
