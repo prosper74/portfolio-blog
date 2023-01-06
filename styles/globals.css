@@ -54,3 +54,49 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #311042;
 }
+
+/* Portfolio swiper css */
+
+.portfolio-container {
+  overflow: initial;
+}
+
+.portfolio-container > .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 450px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #9932cc !important;
+}
+
+.portfolio-container > .swiper-slide .portfolioContent {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .portfolioContent {
+    padding: 0.75rem;
+  }
+
+  .portfolio-container .swiper-slide {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-container > .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

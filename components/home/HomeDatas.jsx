@@ -183,27 +183,74 @@ export const ServicesData = [
 export const PortfolioData = [
   {
     id: 1,
-    icon: <WordPressIconIcon width="30" height="30" fill="#9932cc" />,
-    title: 'Web Design - WordPress',
-    subtitle: 'Design, Hosting, SEO, Security',
-    description: 'Project Planning and Implementation',
-    services: [
-      {
-        id: 1,
-        service: 'Gather the project requirements and analyse them',
-      },
-      {
-        id: 2,
-        service: 'Plan the data and sketch a design',
-      },
-      {
-        id: 3,
-        service: 'Choose a theme or setup Elementor Builder if custom',
-      },
-      {
-        id: 4,
-        service: 'Design, Send for review, modify and closeout project',
-      },
-    ],
+    img: '/assets/loctech.png',
+    title: 'Loctech',
+    subtitle: 'Client Project',
+    description:
+      'Loctech is an e-learning app built with GatsbyJS and Strapi. This project exposed me to the JAMSTACK and CDN concepts, using apollo client, using gatsby plugins, understanding how gatsby cache works, setting up a PWA, using Markdown for contents and more.',
+    link: 'https://www.loctechng.com/',
+  },
+  {
+    id: 2,
+    img: '/assets/safe_haven.jpg',
+    title: 'Safe Haven',
+    subtitle: 'Personal Project',
+    description:
+      'A real estate website, built with NextJS and Strapi. In this project I learnt how to setup NextJS with typescript, redux, tailwindcss, eslint, Jest, Prettier. I also learnt how to; write test with Jest and React testing library, use cloudinary to store and retrieve images, use zod for form validation, use NextJS static/dynamic props, and more...',
+    link: 'https://safe-haven-fe.vercel.app/',
+  },
+  {
+    id: 3,
+    img: '/assets/tantalizers.png',
+    title: 'The Tantalizers',
+    subtitle: 'Client Project',
+    description:
+      'A restaurant website built with WordPress. Features; food ordering system, nice food menu, events and booking system.',
+    link: 'https://thetantalizersca.com/',
+  },
+  {
+    id: 4,
+    img: '/assets/reactportfolio.jpg',
+    title: 'React Portfolio',
+    subtitle: 'Personal Project',
+    description:
+      'A react personal portfolio website with a cool animations and smooth scroll. The goal of this project is to build a react app with less libraries and dependencies.',
+    link: 'https://dr0eu.csb.app/',
+  },
+  {
+    id: 5,
+    img: '/assets/chappelle.jpg',
+    title: 'Chappelle Daycare',
+    subtitle: 'Client Project',
+    description:
+      'A Daycare website built with WordPress. With features like online booking, enrollment form, blog, PTA section, admission portal, programs and syllabus, and more...',
+    link: 'https://chappelledaycare.ca/',
+  },
+  {
+    id: 6,
+    img: '/assets/gatsby.jpg',
+    title: 'Gatsby Portfolio',
+    subtitle: 'Personal Project',
+    description:
+      'A simple portfolio website built with GatsbyJS. In this project I learnt how to create page template using gatsby-node.js file, how to create an infinite bubble animation with HTML/CSS/JavaScript, how to use gatsby plugins for optimization (especially the gatsby image plugins).',
+    link: 'https://gatsbyappbyprosper.netlify.app/',
+  },
+  {
+    id: 7,
+    img: '/assets/gtafricamart.jpg',
+    title: 'GT African Mart',
+    subtitle: 'Client Project',
+    description:
+      'GT African mart is full e-commerce project. with a lot of features like payment, authentication, security etc. Built with wordpress',
+    link: 'https://gtafricanmart.ca/',
+  },
+  {
+    id: 8,
+    img: '/assets/githubProfiler.jpg',
+    title: 'Github Profiler',
+    subtitle: 'Personal Project',
+    description:
+      "Displays github user's profile in a beautiful UI. I learnt some ReactJS concept like page routing, using axios to fetch data (consumed third party API), using Material UI, sending mails from front-end with email-js and integrating scss",
+    link: 'https://githubprofilebyprosper.netlify.app/',
   },
 ];

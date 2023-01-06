@@ -61,16 +61,18 @@ export const EyeIcon = ({ width, height, fill }) => {
   );
 };
 
-export const ForwardArrow = () => {
+export const ForwardArrow = ({ width, height, fill }) => {
   return (
     <svg
+      width={width}
+      height={height}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="w-4 h-4"
     >
       <path
+        fill={fill}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

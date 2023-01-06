@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { ServicesData } from './HomeDatas';
 import { ArrowDownIcon, CheckIcon, CloseIcon } from '../common/svgIcons';
 
@@ -35,7 +34,7 @@ export function Services() {
                   <p className="text-base md:text-xl">{item.subtitle}</p>
                 </div>
 
-                <motion.button
+                <button
                   className="flex items-center md:text-lg mt-auto"
                   onClick={() => setModal(i)}
                 >
@@ -43,7 +42,7 @@ export function Services() {
                   <span className="mt-1 rotate-[-90deg] hover:translate-x-1 transition-all">
                     <ArrowDownIcon width="20" height="20" fill="#9932cc" />
                   </span>
-                </motion.button>
+                </button>
 
                 <div
                   className={`fixed inset-0 bg-overlay flex justify-center items-center px-4 z-[150] transition-all ${
