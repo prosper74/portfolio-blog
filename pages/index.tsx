@@ -1,4 +1,10 @@
-import { Banner, Portfolio, Services, Skills } from '../components/home';
+import {
+  Banner,
+  Portfolio,
+  Services,
+  Skills,
+  Qualifications,
+} from '../components/home';
 import SEO from '../components/Seo';
 
 export default function Home() {
@@ -14,6 +20,7 @@ export default function Home() {
         <Skills />
         <Services />
         <Portfolio />
+        <Qualifications />
       </main>
     </>
   );

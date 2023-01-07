@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { PortfolioData } from './HomeDatas';
 import { ArrowDownIcon, CloseIcon, LinkIcon } from '../common/svgIcons';
-// import { ArrowDownIcon, CheckIcon, CloseIcon } from '../common/svgIcons';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -94,7 +93,7 @@ export function Portfolio() {
                       </div>
 
                       <div
-                        className={`fixed inset-0 bg-overlay flex justify-center items-center px-1 z-[150] transition-all ${
+                        className={`fixed inset-0 bg-overlay flex justify-center items-center px-1 z-[1000] transition-all ${
                           modal === d.id
                             ? 'visible opacity-100'
                             : 'invisible opacity-0'
