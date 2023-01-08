@@ -77,7 +77,7 @@ export function Qualifications() {
                         {qualification.subtitle}
                       </span>
                       <div className="flex items-center gap-2 text-sm">
-                        <CalendarIcon width="15" height="30" fill="#9932cc" />
+                        <CalendarIcon width="15" height="15" fill="#9932cc" />
                         {qualification.date}
                       </div>
                     </div>

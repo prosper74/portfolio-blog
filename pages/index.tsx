@@ -4,6 +4,7 @@ import {
   Services,
   Skills,
   Qualifications,
+  BlogPosts,
 } from '../components/home';
 import SEO from '../components/Seo';
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Qualifications />
+        <BlogPosts />
       </main>
     </>
   );

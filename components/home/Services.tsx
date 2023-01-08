@@ -20,7 +20,7 @@ export function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
             {ServicesData?.map((item, i) => (
               <div
                 key={i}
