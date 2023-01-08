@@ -25,7 +25,7 @@ export function Qualifications() {
           <p className="text-xl md:text-2xl">My journey so far</p>
         </div>
 
-        <div className="quaContainer container">
+        <div>
           <div className="flex items-center justify-evenly md:justify-center mb-4 font-semibold text-xl md:text-2xl">
             <button
               onClick={() => setIsActive(false)}
@@ -54,6 +54,14 @@ export function Qualifications() {
               />{' '}
               Work
             </button>
+          </div>
+
+          <div className="grid xsss:grid-cols-107 md:grid-cols-105">
+            <div
+              className={`transition-all ${isActive ? 'h-0 overflow-hidden' : 'h-max mb-4'}`}
+            >
+              <div></div>
+            </div>
           </div>
         </div>
       </section>

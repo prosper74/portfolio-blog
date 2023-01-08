@@ -13,6 +13,7 @@ module.exports = {
       xs: '340px',
       // => @media (min-width: 640px) { ... }
       xss: '430px',
+      xsss: '560px',
       // => @media (min-width: 430px) { ... }
       sm: '640px',
       // => @media (min-width: 640px) { ... }
@@ -62,6 +63,8 @@ module.exports = {
 
       gridTemplateColumns: {
         101: '0.5fr 3fr',
+        105: '0.5fr',
+        107: '0.7fr',
       },
       gridColumn: {
         101: '1 / 3',
