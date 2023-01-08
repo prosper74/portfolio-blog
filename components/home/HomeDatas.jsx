@@ -254,3 +254,48 @@ export const PortfolioData = [
     link: 'https://githubprofilebyprosper.netlify.app/',
   },
 ];
+
+export const QualificationsData = [
+  {
+    id: 1,
+    type: 'education',
+    qualifications: [
+      {
+        id: 1,
+        title: 'Computer Science',
+        subtitle: 'Abia State - Polytechnic',
+        date: '2011 - 2016',
+      },
+      {
+        id: 1,
+        title: 'WASSCE',
+        subtitle: 'Dave Christian Academy',
+        date: '2006 - 2011',
+      },
+    ],
+  },
+  {
+    id: 1,
+    type: 'work',
+    qualifications: [
+      {
+        id: 1,
+        title: 'Software Engineer',
+        subtitle: 'Metrovatech, Nigeria',
+        date: '2020 - 2022',
+      },
+      {
+        id: 1,
+        title: 'WordPress Web Designer / Graphics Designer',
+        subtitle: 'Codelab LLC, USA',
+        date: '2018 - 2020',
+      },
+      {
+        id: 1,
+        title: 'WordPress Web Designer / Graphics Designer',
+        subtitle: 'Codelab LLC, USATelace Multimedia - Freelance',
+        date: '2017 - 2020',
+      },
+    ],
+  },
+];

@@ -63,8 +63,9 @@ module.exports = {
 
       gridTemplateColumns: {
         101: '0.5fr 3fr',
-        105: '0.5fr',
-        107: '0.7fr',
+        105: '0.7fr',
+        107: '0.8fr',
+        111: '1fr max-content 1fr',
       },
       gridColumn: {
         101: '1 / 3',

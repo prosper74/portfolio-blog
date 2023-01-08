@@ -1,16 +1,9 @@
 import { useState } from 'react';
-import Image from 'next/image';
-import { PortfolioData } from './HomeDatas';
-import {
-  ArrowDownIcon,
-  BagIcon,
-  CloseIcon,
-  GraduationCapIcon,
-  LinkIcon,
-} from '../common/svgIcons';
+import { QualificationsData } from './HomeDatas';
+import { BagIcon, CalendarIcon, GraduationCapIcon } from '../common/svgIcons';
 
 export function Qualifications() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState('education');
 
   return (
     <>
@@ -26,42 +19,78 @@ export function Qualifications() {
         </div>
 
         <div>
-          <div className="flex items-center justify-evenly md:justify-center mb-4 font-semibold text-xl md:text-2xl">
+          <div className="flex items-center justify-evenly md:justify-center gap-2 mb-4 font-semibold text-lg md:text-xl">
             <button
-              onClick={() => setIsActive(false)}
-              className={`flex items-center md:mx-10 gap-2 transition-all
-                ${!isActive && 'text-primary'}
+              onClick={() => setIsActive('education')}
+              className={`flex items-center gap-1 transition-all
+                ${isActive === 'education' && 'text-primary'}
               `}
             >
               <GraduationCapIcon
-                width="30"
-                height="30"
-                fill={`${!isActive ? '#9932cc' : 'rgb(55 65 81)'}`}
+                width="26"
+                height="26"
+                fill={`${
+                  isActive === 'education' ? '#9932cc' : 'rgb(55 65 81)'
+                }`}
               />
               Education
             </button>
 
             <button
-              onClick={() => setIsActive(true)}
-              className={`flex items-center md:mx-10 gap-2 transition-all
-                ${isActive && 'text-primary'}
+              onClick={() => setIsActive('work')}
+              className={`flex items-center md:mx-10 gap-1 transition-all
+                ${isActive === 'work' && 'text-primary'}
               `}
             >
               <BagIcon
-                width="24"
-                height="24"
-                fill={`${isActive ? '#9932cc' : 'rgb(55 65 81)'}`}
+                width="20"
+                height="20"
+                fill={`${isActive === 'work' ? '#9932cc' : 'rgb(55 65 81)'}`}
               />{' '}
               Work
             </button>
           </div>
 
-          <div className="grid xsss:grid-cols-107 md:grid-cols-105">
-            <div
-              className={`transition-all ${isActive ? 'h-0 overflow-hidden' : 'h-max mb-4'}`}
-            >
-              <div></div>
-            </div>
+          <div className="grid xsss:grid-cols-105 md:grid-cols-107 justify-center">
+            {QualificationsData.map((item, i) => (
+              <div
+                key={i}
+                className={`transition-all h-0 overflow-hidden ${
+                  isActive === item.type && 'h-max mb-4'
+                }`}
+              >
+                {item.qualifications.map((qualification, i) => (
+                  <div key={i} className="grid grid-cols-111 gap-6">
+                    {i % 2 !== 0 && <div></div>}
+
+                    {i % 2 !== 0 && (
+                      <div>
+                        <span className="inline-block w-3 h-3 bg-primary rounded-full"></span>
+                        <span className="block w-[1px] h-full bg-primary translate-x-[6px] translate-y-[-7px]"></span>
+                      </div>
+                    )}
+                    <div>
+                      <h3 className="font-medium text-xl md:text-2xl">
+                        {qualification.title}
+                      </h3>
+                      <span className="text-lg md:text-xl">
+                        {qualification.subtitle}
+                      </span>
+                      <div className="flex items-center gap-2 text-sm">
+                        <CalendarIcon width="15" height="30" fill="#9932cc" />
+                        {qualification.date}
+                      </div>
+                    </div>
+                    {i % 2 === 0 && (
+                      <div>
+                        <span className="inline-block w-3 h-3 bg-primary rounded-full"></span>
+                        <span className="block w-[1px] h-full bg-primary translate-x-[6px] translate-y-[-7px]"></span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>
