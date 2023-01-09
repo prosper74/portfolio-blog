@@ -6,6 +6,7 @@ import {
   Qualifications,
   BlogPosts,
   Testimonials,
+  Contact,
 } from '../components/home';
 import SEO from '../components/Seo';
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Qualifications />
         <Testimonials />
         <BlogPosts />
+        <Contact />
       </main>
     </>
   );

@@ -5,6 +5,7 @@ import { Services } from './Services';
 import { Qualifications } from './Qualifications';
 import { BlogPosts } from './BlogPosts';
 import { Testimonials } from './Testimonials';
+import { Contact } from './Contact';
 
 export {
   Banner,
@@ -14,4 +15,5 @@ export {
   Qualifications,
   BlogPosts,
   Testimonials,
+  Contact,
 };
