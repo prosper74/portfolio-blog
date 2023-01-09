@@ -1,18 +1,15 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ServicesData } from './HomeDatas';
 import { ArrowDownIcon, CalendarIcon } from '../common/svgIcons';
 
 export function BlogPosts() {
-  const [modal, setModal] = useState(-1);
 
   return (
     <>
       <section
         id="blog"
         className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words"
-        onClick={() => modal >= 0 && setModal(-1)}
       >
         <div>
           <div className="text-center">
@@ -49,7 +46,6 @@ export function BlogPosts() {
 
                 <button
                   className="flex items-center md:text-lg mt-auto"
-                  onClick={() => setModal(i)}
                 >
                   Read
                   <span className="mt-1 rotate-[-90deg] hover:translate-x-1 transition-all">

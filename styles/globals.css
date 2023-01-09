@@ -99,3 +99,43 @@ a {
     padding-bottom: 50px;
   }
 }
+/* Portfolio swiper css end */
+
+/* Testimonials swiper css */
+
+.testimonials {
+  overflow: hidden;
+}
+
+.testimonials > .swiper-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials > .swiper-container > .swiper-slide {
+  font-size: 18px;
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  height: 270px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+@media screen and (min-width: 1250px) {
+  .testimonials > .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* Testimonials swiper css end */
