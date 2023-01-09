@@ -151,8 +151,7 @@ export function Header() {
               </li>
               <li>
                 <Link
-                  href="/#blog"
-                  scroll={false}
+                  href="/blog"
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image

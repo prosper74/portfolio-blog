@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { ServicesData } from './HomeDatas';
 import { ArrowDownIcon, CalendarIcon } from '../common/svgIcons';
-import Image from 'next/image';
 
 export function BlogPosts() {
   const [modal, setModal] = useState(-1);
@@ -14,14 +15,14 @@ export function BlogPosts() {
         onClick={() => modal >= 0 && setModal(-1)}
       >
         <div>
-          <div className="text-center mb-12">
+          <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-1">
               Latest Posts
             </h2>
             <p className="text-xl md:text-2xl">Here are my latest blog posts</p>
           </div>
 
-          <div className="grid xss:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid xss:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 my-12">
             {ServicesData?.map((item, i) => (
               <div
                 key={i}
@@ -30,9 +31,9 @@ export function BlogPosts() {
               >
                 <div className="mb-4">
                   <Image
-                    src="/assets/abiye.jpg"
+                    src="/assets/prospernew.png"
                     alt="author"
-                    width={25}
+                    width={28}
                     height={25}
                     className="rounded-full shadow-customBox object-cover mb-3"
                   />
@@ -57,6 +58,22 @@ export function BlogPosts() {
                 </button>
               </div>
             ))}
+          </div>
+
+          <div className="flex items-center justify-center">
+            <Link
+              href="/blog"
+              className="flex items-center justify-center py-2 px-[10px] text-lg font-semibold text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-300 hover:translate-y-[0.25rem] max-w-[210px]"
+            >
+              See all posts
+              <Image
+                src="/assets/icons/blog_white_icon.svg"
+                alt="Blog icon"
+                width={18}
+                height={18}
+                className="ml-1"
+              />
+            </Link>
           </div>
         </div>
       </section>
