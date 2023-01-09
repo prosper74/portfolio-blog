@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { TestimonialData } from './HomeDatas';
-import { ArrowDownIcon, CalendarIcon, CloseIcon } from '../common/svgIcons';
+import { StarIcon } from '../common/svgIcons';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -21,19 +20,19 @@ export function Testimonials() {
     <>
       <section
         id="blog"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words testimonials"
+        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words overflow-hidden"
       >
         <div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-1">
               Testimonials
             </h2>
-            <p className="text-xl md:text-2xl mb-12">
-              What my clients and employers are saying about me{' '}
+            <p className="text-xl md:text-2xl">
+              What people are saying about me 😍
             </p>
           </div>
 
-          <div>
+          <div className="w-[800px] mx-auto xl:w-full xl:py-[50px]">
             <Swiper
               slidesPerView={3}
               spaceBetween={15}
@@ -41,45 +40,40 @@ export function Testimonials() {
               navigation={false}
               className="mySwiper"
             >
-              {/* Render sliders. the source data is from the data.js file */}
               {TestimonialData.map((d) => (
                 <SwiperSlide key={d.id}>
-                  <div>
-                    <div className="flex flex-col justify-evenly mb-4">
-                      <div className="flex justify-between items-center mb-3">
-                        {/* testimonial image  */}
-                        <div className="flex items-center gap-2">
-                          <Image
-                            src={d.img}
-                            alt={d.name}
-                            width={60}
-                            height={60}
-                            className="rounded-full object-cover mr-3"
+                  <div className="flex flex-col justify-evenly h-[270px] my-6 p-4 rounded-xl shadow-customBox cursor-grabbing">
+                    <div className="flex justify-between items-center mb-3">
+                      <div className="flex items-center gap-2">
+                        <Image
+                          src={d.img}
+                          alt={d.name}
+                          width={60}
+                          height={60}
+                          className="rounded-full object-cover mr-3"
+                        />
+                      </div>
+
+                      <div className="flex items-center">
+                        {[0, 1, 2, 3, 4].map((_, i) => (
+                          <StarIcon
+                            key={i}
+                            width="15"
+                            height="15"
+                            fill="#9932cc"
                           />
-                        </div>
-
-                        {/* the star icons  */}
-                        <div className="flex items-center">
-                          {[0, 1, 2, 3, 4].map((_, i) => (
-                            <CloseIcon
-                              key={i}
-                              width="15"
-                              height="15"
-                              fill="#9932cc"
-                            />
-                          ))}
-                        </div>
+                        ))}
                       </div>
-
-                      <div className="mb-4">
-                        <h3 className="font-mono font-semibold text-xl">
-                          {d.name}
-                        </h3>
-                        <p className="font-semibold text-sm">{d.designation}</p>
-                      </div>
-
-                      <p className="mb-6">{d.desc}</p>
                     </div>
+
+                    <div className="mb-4">
+                      <h3 className="font-mono font-semibold text-xl">
+                        {d.name}
+                      </h3>
+                      <p className="font-semibold text-sm">{d.designation}</p>
+                    </div>
+
+                    <p className="mb-6 text-md">{d.desc}</p>
                   </div>
                 </SwiperSlide>
               ))}
