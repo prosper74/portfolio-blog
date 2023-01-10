@@ -14,7 +14,6 @@ module.exports = {
   ],
   moduleNameMapper: {
     '@src/(.*)': '<rootDir>/src/$1',
-    '@components/(.*)': '<rootDir>/components/$1',
     '@pages/(.*)': '<rootDir>/pages/$1',
     '@styles/(.*)': '<rootDir>/styles/$1',
   },
@@ -32,3 +31,5 @@ module.exports = {
     },
   },
 };
+
+export {};
