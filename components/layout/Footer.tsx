@@ -1,4 +1,4 @@
-import { GithubAltIcon, LinkedinAltIcon } from '../common/svgIcons';
+import { GithubIcon, LinkedinAltIcon } from '../common/svgIcons';
 
 export function Footer() {
   return (
@@ -17,7 +17,7 @@ export function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <GithubAltIcon width="25" height="25" fill="rgb(253, 245, 255)" />
+              <GithubIcon width="25" height="25" fill="rgb(253, 245, 255)" />
             </a>
             <a
               href="https://github.com/prosper74"
