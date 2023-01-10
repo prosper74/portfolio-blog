@@ -7,12 +7,22 @@ import { pageVariants } from '../common/animationVariants';
 
 export default function Layout({ children }: any) {
   const [scrollup, setScrollup] = useState(false);
+  const [scrollBottom, setScrollBottom] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY >= 120) {
       setScrollup(true);
     } else {
       setScrollup(false);
+    }
+
+    if (
+      window.innerHeight + window.pageYOffset >=
+      document.body.offsetHeight - 2
+    ) {
+      setScrollBottom(true);
+    } else {
+      setScrollBottom(false);
     }
   };
 
@@ -50,7 +60,7 @@ export default function Layout({ children }: any) {
           height={25}
           className={`fixed right-4 opacity-80 z-[500] transition-[5s] ${
             scrollup ? 'bottom-16' : 'bottom-[-100%]'
-          }`}
+          } ${scrollBottom && 'bottom-[-100%]'}`}
         />
       </button>
     </>

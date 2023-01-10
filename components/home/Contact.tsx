@@ -1,4 +1,9 @@
-import { CallIcon, SendMailIcon, TwitterAltIcon } from '../common/svgIcons';
+import {
+  CallIcon,
+  GithubIcon,
+  SendMailIcon,
+  TwitterAltIcon,
+} from '../common/svgIcons';
 
 export function Contact() {
   return (
@@ -17,14 +22,16 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-center my-12">
             <div className="flex items-center gap-2">
               <CallIcon width="40" height="40" fill="#9932cc" />
               <div>
                 <h3 className="font-mono font-semibold text-xl md:text-2xl">
                   Call or Whatsapp
                 </h3>
-                <p className="text-lg md:text-xl">234 8034285512</p>
+                <a href="tel:2348034285512" className="text-lg md:text-xl">
+                  234 8034285512
+                </a>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -33,7 +40,12 @@ export function Contact() {
                 <h3 className="font-mono font-semibold text-xl md:text-2xl">
                   Email
                 </h3>
-                <p className="text-lg md:text-xl">atu.prosper@gmail.com</p>
+                <a
+                  href="mailto:atu.prosper@gmail.com"
+                  className="text-lg md:text-xl"
+                >
+                  atu.prosper@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -42,7 +54,30 @@ export function Contact() {
                 <h3 className="font-mono font-semibold text-xl md:text-2xl">
                   Twitter
                 </h3>
-                <p className="text-lg md:text-xl">234 8034285512</p>
+                <a
+                  href="https://twitter.com/prosperjohnson"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-lg md:text-xl"
+                >
+                  @prosperjohnson
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <GithubIcon width="40" height="40" fill="#9932cc" />
+              <div>
+                <h3 className="font-mono font-semibold text-xl md:text-2xl">
+                  Github
+                </h3>
+                <a
+                  href="https://github.com/prosper74"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-lg md:text-xl"
+                >
+                  prosper-atu
+                </a>
               </div>
             </div>
           </div>
