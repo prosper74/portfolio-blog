@@ -42,7 +42,7 @@ export function Testimonials() {
             >
               {TestimonialData.map((d) => (
                 <SwiperSlide key={d.id}>
-                  <div className="flex flex-col justify-evenly h-[270px] my-6 p-4 rounded-xl shadow-customBox cursor-grabbing">
+                  <div className="flex flex-col justify-evenly h-[270px] my-6 ml-1 p-4 rounded-xl shadow-customBox cursor-grabbing">
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex items-center gap-2">
                         <Image
