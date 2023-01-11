@@ -2,9 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ServicesData } from './HomeDatas';
 import { ArrowDownIcon, CalendarIcon } from '../common/svgIcons';
+import { PostsProps } from '../common/interfaces';
 
-export function BlogPosts() {
+interface IProps {
+  allPosts: PostsProps;
+}
 
+export function BlogPosts({ allPosts }: IProps) {
+  console.log('Posts', allPosts);
   return (
     <>
       <section
@@ -19,8 +24,8 @@ export function BlogPosts() {
             <p className="text-xl md:text-2xl">Here are my latest blog posts</p>
           </div>
 
-          <div className="grid xss:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 my-12">
-            {ServicesData?.map((item, i) => (
+          <div className="grid xsss:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-12">
+            {allPosts?.map((post: PostsProps, i: number) => (
               <div
                 key={i}
                 role="button"
@@ -35,18 +40,16 @@ export function BlogPosts() {
                     className="rounded-full shadow-customBox object-cover mb-3"
                   />
                   <h3 className="font-mono font-bold text-xl md:text-2xl">
-                    {item.title}
+                    {post.title}
                   </h3>
-                  <p className="text-base md:text-xl">{item.subtitle}</p>
+                  <p className="text-base md:text-xl">{post.content?.substring(0, 60)}</p>
                   <p className="flex items-center gap-2 text-sm italic mt-2">
                     <CalendarIcon width="15" height="15" fill="#9932cc" />
                     29 days ago
                   </p>
                 </div>
 
-                <button
-                  className="flex items-center md:text-lg mt-auto"
-                >
+                <button className="flex items-center md:text-lg mt-auto">
                   Read
                   <span className="mt-1 rotate-[-90deg] hover:translate-x-1 transition-all">
                     <ArrowDownIcon width="20" height="20" fill="#9932cc" />
