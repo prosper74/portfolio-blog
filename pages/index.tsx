@@ -39,7 +39,7 @@ export default function Home({ allPosts }: IProps) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/posts', {
+  const res = await fetch(`${process.env.SITE_URL}/posts`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

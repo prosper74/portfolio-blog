@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ServicesData } from './HomeDatas';
+import {timeSince} from '../common/dateFunction'
 import { ArrowDownIcon, CalendarIcon } from '../common/svgIcons';
 import { PostsProps } from '../common/interfaces';
 
@@ -42,10 +42,12 @@ export function BlogPosts({ allPosts }: IProps) {
                   <h3 className="font-mono font-bold text-xl md:text-2xl">
                     {post.title}
                   </h3>
-                  <p className="text-base md:text-xl">{post.content?.substring(0, 60)}</p>
+                  <p className="text-base md:text-xl">
+                    {post.content?.substring(0, 60)}
+                  </p>
                   <p className="flex items-center gap-2 text-sm italic mt-2">
                     <CalendarIcon width="15" height="15" fill="#9932cc" />
-                    29 days ago
+                    {timeSince(new Date(post.createdAt))} ago
                   </p>
                 </div>
 
