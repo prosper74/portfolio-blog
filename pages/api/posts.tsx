@@ -24,14 +24,12 @@ export default async function handler(
       res.json(myPost);
       break;
     case 'GET':
-      const allPosts = await db.collection('posts').find({}).sort( { createdAt: -1 } ).toArray();
+      const allPosts = await db
+        .collection('posts')
+        .find({})
+        .sort({ createdAt: -1 })
+        .toArray();
       res.json({ status: 200, data: allPosts });
-      break;
-    case 'DELETE':
-      const deletePost = await db.collection('posts').deleteOne({
-        _id: ObjectId(id),
-      });
-      res.json({ status: 200, data: deletePost });
       break;
   }
 }

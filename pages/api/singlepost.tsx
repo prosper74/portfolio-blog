@@ -32,5 +32,11 @@ export default async function handler(
       );
       res.json({ status: 200, data: updatePost });
       break;
+    case 'DELETE':
+      const deletePost = await db.collection('posts').deleteOne({
+        _id: ObjectId(id),
+      });
+      res.json({ status: 200, data: deletePost });
+      break;
   }
 }

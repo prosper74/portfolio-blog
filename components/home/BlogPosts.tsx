@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {timeSince} from '../common/dateFunction'
+import { timeSince } from '../common/dateFunction';
 import { ArrowDownIcon, CalendarIcon } from '../common/svgIcons';
 import { PostsProps } from '../common/interfaces';
 
@@ -9,7 +9,6 @@ interface IProps {
 }
 
 export function BlogPosts({ allPosts }: IProps) {
-  console.log('Posts', allPosts);
   return (
     <>
       <section
