@@ -6,7 +6,7 @@ export function Footer() {
       <header className="md:fixed md:bottom-0 md:inset-x-0 w-full font-medium bg-primary max-md:mb-8">
         <div className="flex justify-between items-center gap-5 sm:container mx-auto px-2 md:px-10 lg:px-20 py-3">
           <div>
-            <p className="font-mono">
+            <p className="font-mono text-body">
               &copy; {new Date().getFullYear()},
               <span> Learning in Progress...</span>
             </p>
