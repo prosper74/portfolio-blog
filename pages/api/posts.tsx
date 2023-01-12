@@ -24,7 +24,7 @@ export default async function handler(
       res.json(myPost);
       break;
     case 'GET':
-      const allPosts = await db.collection('posts').find({}).toArray();
+      const allPosts = await db.collection('posts').find({}).sort( { createdAt: -1 } ).toArray();
       res.json({ status: 200, data: allPosts });
       break;
     case 'DELETE':

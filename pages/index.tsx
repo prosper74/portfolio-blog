@@ -16,7 +16,6 @@ interface IProps {
 }
 
 export default function Home({ allPosts }: IProps) {
-  
   return (
     <>
       <SEO
@@ -39,7 +38,7 @@ export default function Home({ allPosts }: IProps) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.SITE_URL}/posts`, {
+  const res = await fetch(`${process.env.SITE_URL}/homeposts`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
