@@ -32,7 +32,7 @@ export default function Blog({ allPosts }: IProps) {
         >
           <div>
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-1">Blog</h2>
+              <h2 className="text-3xl md:text-4xl font-bold md:mt-12">Blog</h2>
             </div>
 
             <div className="grid xsss:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-12">
