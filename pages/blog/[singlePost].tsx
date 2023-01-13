@@ -13,8 +13,8 @@ export default function SinglePost({ post }: IProps) {
   return (
     <>
       <SEO
-        pageTitle="Blog | Let's learn together"
-        pageDescription="This is my personal portfolio and blog. Feel at home as we build together"
+        pageTitle={`Blog | ${post.title}`}
+        pageDescription={post.content?.substring(0, 150)}
       />
 
       <main>
