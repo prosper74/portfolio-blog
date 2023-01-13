@@ -23,7 +23,7 @@ export default function BlogCard({ allPosts }: IProps) {
           key={i}
           href={
             post.title
-              ? `/${post?.title.toLowerCase().replace(/ /g, '-')}&id=${
+              ? `/blog/${post?.title.toLowerCase().replace(/ /g, '-')}&id=${
                   post._id
                 }`
               : ''
@@ -46,7 +46,7 @@ export default function BlogCard({ allPosts }: IProps) {
             </p>
             <p className="flex items-center gap-2 text-sm italic mt-2">
               <CalendarIcon width="15" height="15" fill="#9932cc" />
-              {timeSince(new Date(post.createdAt))} ago
+              {timeSince(new Date(post.createdAt!))} ago
             </p>
           </div>
 

@@ -29,7 +29,7 @@ export default function Blog({ allPosts }: IProps) {
         >
           <div>
             <div className="text-center">
-              <h2 className="text-3xl md:text-5xl font-bold md:mt-12">Blog</h2>
+              <h2 className="text-4xl md:text-7xl font-bold md:mt-12">Blog</h2>
             </div>
             <BlogCard allPosts={allPosts} />
           </div>
