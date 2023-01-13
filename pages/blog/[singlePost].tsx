@@ -10,8 +10,6 @@ interface IProps {
 }
 
 export default function SinglePost({ post }: IProps) {
-  console.log('Post', post);
-
   return (
     <>
       <SEO
