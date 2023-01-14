@@ -54,6 +54,8 @@ export default function SinglePostBody({ post }: IProps) {
             headers: {
               'Content-Type': 'application/json',
             },
+            mode: 'cors',
+            credentials: 'include',
             body: JSON.stringify(data),
           }
         );
