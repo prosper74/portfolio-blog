@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { ObjectId } from 'mongodb';
 import clientPromise from '../../lib/mongodb';
 
 export default async function handler(
@@ -8,7 +7,6 @@ export default async function handler(
 ) {
   const client = await clientPromise;
   const db = client.db('myBlog');
-  const { id } = req.query;
   const { title, content, like, thumbnail } = req.body;
 
   switch (req.method) {

@@ -9,10 +9,12 @@ export default async function handler(
   const db = client.db('myBlog');
 
   try {
-    // const client = await clientPromise;
-    // const db = client.db('sample_mflix');
-
-    const allPosts = await db.collection('posts').find({}).limit(4).sort( { createdAt: -1 } ).toArray();
+    const allPosts = await db
+      .collection('posts')
+      .find({})
+      .limit(4)
+      .sort({ createdAt: -1 })
+      .toArray();
 
     res.json({ status: 200, data: allPosts });
   } catch (e) {
