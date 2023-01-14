@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useCookies } from 'react-cookie';
 import Image from 'next/image';
 import Link from 'next/link';
 import { timeSince } from './dateFunction';
@@ -15,12 +16,18 @@ interface IProps {
 }
 
 export default function BlogCard({ allPosts }: IProps) {
-  const [isLike, setIsLike] = useState(false);
+  const [isLiked, setIsLiked] = useState<string[]>([]);
+  const [cookies] = useCookies(['likedPostsInCookie']);
+
+  useEffect(() => {
+    setIsLiked(cookies.likedPostsInCookie || []);
+  }, [cookies.likedPostsInCookie]);
+
   return (
     <div className="grid lg:grid-cols-2 gap-6 my-12">
-      {allPosts?.map((post: PostsProps, i: number) => (
+      {allPosts?.map((post: PostsProps) => (
         <Link
-          key={i}
+          key={post._id}
           href={
             post.title
               ? `/blog/${post?.title.toLowerCase().replace(/ /g, '-')}&id=${
@@ -58,10 +65,10 @@ export default function BlogCard({ allPosts }: IProps) {
               </span>
             </button>
             <div className="relative">
-              {isLike ? (
-                <FavouriteIcon width="38" height="38" />
+              {isLiked.includes(post._id!) ? (
+                <FavouriteIcon width="40" height="40" />
               ) : (
-                <LikeIcon width="38" height="38" />
+                <LikeIcon width="40" height="40" />
               )}
 
               <span className="absolute top-0 left-0 px-[0.2rem] py-[0.14rem] flex items-center justify-center bg-white rounded-full shadow-customBox text-gray-700 text-xs">

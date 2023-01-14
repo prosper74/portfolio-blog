@@ -48,7 +48,7 @@ export default function SinglePostBody({ post }: IProps) {
 
       try {
         const res = await fetch(
-          `http://localhost:3000/api/singlepost?id=${post._id}`,
+          `${process.env.NEXT_PUBLIC_SITE_URL}/singlepost?id=${post._id}`,
           {
             method: 'PUT',
             headers: {

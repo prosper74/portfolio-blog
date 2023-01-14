@@ -40,7 +40,7 @@ export default function Blog({ allPosts }: IProps) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.SITE_URL}/posts`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/posts`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

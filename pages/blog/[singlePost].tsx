@@ -50,7 +50,7 @@ export async function getServerSideProps({ params }: any) {
   const singlePostId = singlePost.slice(singlePost.length - 24);
 
   const res = await fetch(
-    `${process.env.SITE_URL}/singlepost?id=${singlePostId}`,
+    `${process.env.NEXT_PUBLIC_SITE_URL}/singlepost?id=${singlePostId}`,
     {
       method: 'GET',
       headers: {
