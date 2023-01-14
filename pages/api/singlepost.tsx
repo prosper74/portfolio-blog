@@ -1,6 +1,7 @@
 // @ts-nocheck
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { ObjectId } from 'mongodb';
+import NextCors from 'nextjs-cors';
 import clientPromise from '../../lib/mongodb';
 
 export default async function handler(
@@ -20,7 +21,13 @@ export default async function handler(
       res.json({ status: 200, data: SinglePost });
       break;
     case 'PUT':
-      const updatePost = await db.collection('posts').updateOne(
+      await NextCors(req, res, {
+        // Options
+        methods: ['PUT'],
+        origin: '*',
+        optionsSuccessStatus: 200,
+      });
+      await db.collection('posts').updateOne(
         {
           _id: ObjectId(id),
         },
@@ -31,7 +38,7 @@ export default async function handler(
           },
         }
       );
-      res.json({ status: 200, data: updatePost });
+      res.json({ status: 200 });
       break;
     case 'DELETE':
       const deletePost = await db.collection('posts').deleteOne({

@@ -47,19 +47,16 @@ export default function SinglePostBody({ post }: IProps) {
       let data = { like: newLikes };
 
       try {
-        const res = await fetch(
+        await fetch(
           `${process.env.NEXT_PUBLIC_SITE_URL}/singlepost?id=${post._id}`,
           {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
             },
-            mode: 'no-cors',
             body: JSON.stringify(data),
           }
         );
-        const postResponse = await res.json();
-        console.log('postResponse', postResponse);
         likedPosts.push(post._id!);
         setCookie('likedPostsInCookie', likedPosts, { path: '/' });
         setLikes(newLikes);
