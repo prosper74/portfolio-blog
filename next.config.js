@@ -9,7 +9,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/:path*',
+        source: 'https://atuprosper.com/:path*',
         destination: 'https://portfolio-blog-new.vercel.app/:path*',
       },
     ];
