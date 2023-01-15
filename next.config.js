@@ -13,7 +13,10 @@ const nextConfig = {
         source: '/api/:path*',
         headers: [
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
-          { key: 'Access-Control-Allow-Origin', value: '*' },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'https://atuprosper.com',
+          },
           {
             key: 'Access-Control-Allow-Methods',
             value: 'GET,PUT',
