@@ -6,15 +6,6 @@ const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'https://portfolio-blog-new.vercel.app/:path*',
-        basePath: false,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
