@@ -21,30 +21,26 @@ export default async function handler(
       res.json({ status: 200, data: SinglePost });
       break;
     case 'PUT':
-      await NextCors(req, res, {
-        // Options
-        methods: ['PUT'],
-        origin: '*',
-        optionsSuccessStatus: 200,
-      });
-      await db.collection('posts').updateOne(
-        {
-          _id: ObjectId(id),
-        },
-        {
-          $set: {
-            updatedAt: new Date(),
-            like,
-          },
-        }
-      );
-      res.json({ status: 200 });
-      break;
-    case 'DELETE':
-      const deletePost = await db.collection('posts').deleteOne({
-        _id: ObjectId(id),
-      });
-      res.json({ status: 200, data: deletePost });
-      break;
+      try {
+        await NextCors(req, res, {
+          methods: ['PUT'],
+          origin: '*',
+          optionsSuccessStatus: 200,
+          body: db.collection('posts').updateOne(
+            {
+              _id: ObjectId(id),
+            },
+            {
+              $set: {
+                updatedAt: new Date(),
+                like,
+              },
+            }
+          ),
+        });
+        res.json({ status: 200 });
+      } catch (error) {
+        console.error(error);
+      }
   }
 }
