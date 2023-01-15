@@ -1,7 +1,6 @@
 // @ts-nocheck
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { ObjectId } from 'mongodb';
-import NextCors from 'nextjs-cors';
 import clientPromise from '../../lib/mongodb';
 
 export default async function handler(
@@ -22,22 +21,17 @@ export default async function handler(
       break;
     case 'PUT':
       try {
-        await NextCors(req, res, {
-          methods: ['PUT'],
-          origin: '*',
-          optionsSuccessStatus: 200,
-          body: db.collection('posts').updateOne(
-            {
-              _id: ObjectId(id),
+        await db.collection('posts').updateOne(
+          {
+            _id: ObjectId(id),
+          },
+          {
+            $set: {
+              updatedAt: new Date(),
+              like,
             },
-            {
-              $set: {
-                updatedAt: new Date(),
-                like,
-              },
-            }
-          ),
-        });
+          }
+        );
         res.json({ status: 200 });
       } catch (error) {
         console.error(error);
