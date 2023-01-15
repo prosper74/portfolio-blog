@@ -9,8 +9,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/:path*',
-        destination: 'https://portfolio-blog-new.vercel.app/:path*',
+        source: '/blog/:path*',
+        destination: 'https://portfolio-blog-new.vercel.app/blog/:path*',
       },
     ];
   },
