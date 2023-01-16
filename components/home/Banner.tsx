@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
+import { motion } from 'framer-motion';
 
 export function Banner() {
   return (
@@ -67,7 +68,11 @@ export function Banner() {
               </a>
             </div>
 
-            <div className="col-span-4 sm:col-span-3">
+            <motion.div
+              animate={{ y: ['5%', '-5%', '5%'] }}
+              transition={{ ease: 'linear', duration: 3, repeat: Infinity }}
+              className="col-span-4 sm:col-span-3"
+            >
               <Image
                 src="/assets/blob_img.svg"
                 alt="Prosper image"
@@ -75,7 +80,7 @@ export function Banner() {
                 width={300}
                 height={300}
               />
-            </div>
+            </motion.div>
 
             {/* Scroll to next section icon */}
             <Link
