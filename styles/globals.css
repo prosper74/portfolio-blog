@@ -91,8 +91,8 @@ a {
 /* Portfolio swiper css end */
 
 /* Markdown styles */
-.markdown-view h3,
-h4 {
+.markdown-view h3, 
+.markdown-view h4 {
   margin-top: 1rem;
   font-size: 1.6rem;
   font-weight: 600;

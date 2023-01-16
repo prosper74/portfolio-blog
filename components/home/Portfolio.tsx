@@ -69,11 +69,11 @@ export function Portfolio() {
                           <h3 className="font-bold text-xl md:text-2xl">
                             {d.title}
                           </h3>
-                          <h4 className="font-medium text-lg md:text-xl">
+                          <h4 className="font-medium text-lg md:text-xl m-0">
                             {d.subtitle}
                           </h4>
                           <p className="text-md my-3">
-                            {d.description.slice(0, 50)}...
+                            {d.description.slice(0, 75)}...
                           </p>
 
                           <button
