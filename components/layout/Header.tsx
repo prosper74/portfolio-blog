@@ -67,7 +67,7 @@ export function Header() {
           scrollup && 'shadow-lg'
         }`}
       >
-        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-2 md:px-10 lg:px-20 py-3">
+        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-4 md:px-10 lg:px-20 py-3">
           <Link
             href="/#home"
             scroll={false}

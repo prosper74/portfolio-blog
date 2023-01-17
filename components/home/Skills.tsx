@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { skillData } from './HomeDatas';
 import { ArrowDownIcon } from '../common/svgIcons';
 
@@ -10,7 +9,7 @@ export function Skills() {
     <>
       <section
         id="skills"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16"
+        className="sm:container mx-auto px-4 md:px-10 lg:px-20 py-16"
       >
         <div>
           <div className="text-center mb-12">

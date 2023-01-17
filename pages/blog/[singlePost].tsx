@@ -27,7 +27,7 @@ export default function SinglePost({ post }: IProps) {
             type: 'spring',
             stiffness: 120,
           }}
-          className="sm:container mx-auto px-2 md:px-10 lg:px-20 pb-16 md:pt-16"
+          className="sm:container mx-auto px-4 md:px-10 lg:px-20 pb-16 md:pt-16"
         >
           <Link href="/blog" className="flex items-center md:text-lg mt-2">
             <span className="mt-1 rotate-[90deg] hover:translate-x-1 transition-all">

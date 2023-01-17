@@ -9,7 +9,7 @@ export function Qualifications() {
     <>
       <section
         id="portfolio"
-        className="relative sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words"
+        className="relative sm:container mx-auto px-4 md:px-10 lg:px-20 py-16 break-words"
       >
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-1">

@@ -10,7 +10,7 @@ export function Contact() {
     <>
       <section
         id="contact"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words"
+        className="sm:container mx-auto px-4 md:px-10 lg:px-20 py-16 break-words"
       >
         <div>
           <div className="text-center">

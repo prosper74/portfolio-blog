@@ -70,7 +70,7 @@ export default function SinglePostBody({ post }: IProps) {
   };
 
   return (
-    <div className="">
+    <div>
       <h2 className="font-mono text-bold text-3xl md:text-5xl">{post.title}</h2>
       <p className="flex items-center gap-2 italic mt-1">
         <CalendarIcon width="20" height="20" fill="#9932cc" />

@@ -20,7 +20,7 @@ export function Testimonials() {
     <>
       <section
         id="blog"
-        className="sm:container mx-auto px-2 md:px-10 lg:px-20 py-16 break-words overflow-hidden"
+        className="sm:container mx-auto px-4 md:px-10 lg:px-20 py-16 break-words overflow-hidden"
       >
         <div>
           <div className="text-center mb-8">
