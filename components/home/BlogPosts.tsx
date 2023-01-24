@@ -2,13 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PostsProps } from '../common/interfaces';
 import BlogCard from '../common/BlogCard';
+import PostsNotFound from '../common/PostsNotFound';
 
 interface IProps {
   allPosts: PostsProps;
 }
 
 export function BlogPosts({ allPosts }: IProps) {
-  console.log('Posts', allPosts);
   return (
     <>
       <section
@@ -24,10 +24,7 @@ export function BlogPosts({ allPosts }: IProps) {
           </div>
 
           {allPosts.length === 0 ? (
-            <div className="font-mono text-center mt-8">
-              <h4 className="font-semibold text-xl md:text-4xl">Ooo Oooh!</h4>
-              <p className="text-lg">Unable to fetch latest Post. Try again</p>
-            </div>
+            <PostsNotFound />
           ) : (
             <div>
               <BlogCard allPosts={allPosts} />
