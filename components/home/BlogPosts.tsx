@@ -8,6 +8,7 @@ interface IProps {
 }
 
 export function BlogPosts({ allPosts }: IProps) {
+  console.log('Posts', allPosts);
   return (
     <>
       <section
@@ -22,23 +23,32 @@ export function BlogPosts({ allPosts }: IProps) {
             <p className="text-xl md:text-2xl">Here are my latest blog posts</p>
           </div>
 
-          <BlogCard allPosts={allPosts} />
+          {allPosts.length === 0 ? (
+            <div className="font-mono text-center mt-8">
+              <h4 className="font-semibold text-xl md:text-4xl">Ooo Oooh!</h4>
+              <p className="text-lg">Unable to fetch latest Post. Try again</p>
+            </div>
+          ) : (
+            <div>
+              <BlogCard allPosts={allPosts} />
 
-          <div className="flex items-center justify-center">
-            <Link
-              href="/blog"
-              className="flex items-center justify-center py-2 px-[10px] text-lg font-semibold text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-300 hover:translate-y-[0.25rem] max-w-[210px]"
-            >
-              See all posts
-              <Image
-                src="/assets/icons/blog_white_icon.svg"
-                alt="Blog icon"
-                width={18}
-                height={18}
-                className="ml-1"
-              />
-            </Link>
-          </div>
+              <div className="flex items-center justify-center">
+                <Link
+                  href="/blog"
+                  className="flex items-center justify-center py-2 px-[10px] text-lg font-semibold text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-300 hover:translate-y-[0.25rem] max-w-[210px]"
+                >
+                  See all posts
+                  <Image
+                    src="/assets/icons/blog_white_icon.svg"
+                    alt="Blog icon"
+                    width={18}
+                    height={18}
+                    className="ml-1"
+                  />
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </>

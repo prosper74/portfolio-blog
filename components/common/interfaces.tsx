@@ -16,4 +16,5 @@ export interface PostsProps {
   createdAt?: string | number | Date;
   updatedAt?: string | number | Date;
   map?: any;
+  length: number;
 }
