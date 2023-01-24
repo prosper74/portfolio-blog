@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import BlogCard from '../../components/common/BlogCard';
 import { PostsProps } from '../../components/common/interfaces';
+import PostsNotFound from '../../components/common/PostsNotFound';
 import SEO from '../../components/Seo';
 
 interface IProps {
@@ -31,7 +32,12 @@ export default function Blog({ allPosts }: IProps) {
             <div className="text-center">
               <h2 className="text-4xl md:text-7xl font-bold md:mt-12">Blog</h2>
             </div>
-            <BlogCard allPosts={allPosts} />
+
+            {allPosts.length === 0 ? (
+              <PostsNotFound />
+            ) : (
+              <BlogCard allPosts={allPosts} />
+            )}
           </div>
         </motion.div>
       </main>
