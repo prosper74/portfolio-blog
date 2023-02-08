@@ -11,7 +11,7 @@ export const skillData = [
     id: 1,
     name: 'Frontend Development',
     icon: <CurlyBracketIcon width="40" height="40" fill="#9932cc" />,
-    experience: '3+ Years experience',
+    experience: '2+ Years experience',
     skills: [
       {
         name: '🚀 HTML/CSS/JavaScript',
@@ -31,10 +31,10 @@ export const skillData = [
     experience: '2+ Years experience',
     skills: [
       {
-        name: '🚀 NodeJs/ExpressJS',
+        name: '🚀 StrapiCMS, Headless WordPress',
       },
       {
-        name: '🚀 StrapiCMS, Headless WordPress',
+        name: '🚀 Basic NodeJs/ExpressJS',
       },
       {
         name: '🚀 Firebase, MongoDB, PostgreSQL, MySQL',
