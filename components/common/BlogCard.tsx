@@ -35,7 +35,7 @@ export default function BlogCard({ allPosts }: IProps) {
                 }`
               : ''
           }
-          className="relative flex flex-col content-between break-words py-8 px-4 dark:bg-secondaryDark shadow-customBox rounded-xl transition-all"
+          className="relative flex flex-col justify-between break-words py-8 px-4 dark:bg-secondaryDark shadow-customBox rounded-xl transition-all"
         >
           <div className="mb-4">
             <Image
@@ -49,7 +49,7 @@ export default function BlogCard({ allPosts }: IProps) {
               {post.title}
             </h3>
             <p className="text-base md:text-xl">
-              {post.content?.substring(0, 90)}
+              {post.content?.substring(0, 90)}...
             </p>
             <p className="flex items-center gap-2 text-sm italic mt-2">
               <CalendarIcon width="15" height="15" fill="#9932cc" />
