@@ -52,9 +52,9 @@ export function Qualifications() {
           </div>
 
           <div className="grid xsss:grid-cols-105 md:grid-cols-107 justify-center">
-            {QualificationsData.map((item, i) => (
+            {QualificationsData.map((item) => (
               <div
-                key={i}
+                key={item.id}
                 className={`transition-all h-0 overflow-hidden ${
                   isActive === item.type && 'h-max mb-4'
                 }`}
