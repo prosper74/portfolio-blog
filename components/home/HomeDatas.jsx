@@ -318,7 +318,7 @@ export const TestimonialData = [
   {
     id: 3,
     img: '/assets/abiye.jpg',
-    name: 'Abiye Samuel Lasbry',
+    name: 'Abiye Samuel',
     designation: 'C.E.O Punters Companion',
     desc: "He didn't just build the website, he also gave technical advice and support. nice guy",
   },
