@@ -142,7 +142,14 @@ export function Banner() {
               I strive to follow best practices and use industry-standard tools,
               including Git-Flow, Test Driven Development, Continous Integration
               (Github Action), Linting (ESLint), Code Formatting (Prettier),
-              Package Management (NPM) and Build Tool (Webpack).
+              Package Management (NPM) and Build Tool (Webpack). I also
+              understand the importance of business growth
+            </p>
+            <br />
+            <p>
+              I also understand the importance of business growth. I can analyse
+              the needs of a business, and contribute the specific value the
+              business needs using my engineering skills.
             </p>
           </div>
 
