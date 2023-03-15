@@ -28,7 +28,7 @@ export const skillData = [
     id: 2,
     name: 'Backend Development',
     icon: <ServerNetworkIcon width="40" height="40" fill="#9932cc" />,
-    experience: '2+ Years experience',
+    experience: '',
     skills: [
       {
         name: '🚀 StrapiCMS, Headless WordPress',
@@ -120,8 +120,7 @@ export const ServicesData = [
       },
       {
         id: 3,
-        service:
-          'Develop the backend (API) using StrapiCMS',
+        service: 'Develop the backend (API) using StrapiCMS',
       },
       {
         id: 4,
