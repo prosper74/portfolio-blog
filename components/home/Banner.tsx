@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
 import { motion } from 'framer-motion';
+import VerticalTextAnimation from '../common/VerticalTextAnimation';
 
 export function Banner() {
   return (
@@ -129,6 +130,7 @@ export function Banner() {
               />
             </strong>
           </div>
+
           <div className="text-xl md:text-2xl mt-4">
             <p>
               I have over four (4) years of experience as a WordPress Developer
@@ -151,6 +153,28 @@ export function Banner() {
               the needs of a business, and contribute the specific value the
               business needs using my engineering skills.
             </p>
+          </div>
+
+          <hr className="bg-primary my-6" />
+          <div className="font-mono text-lg xs:text-2xl md:text-4xl">
+            <h4> I am currently learning </h4>
+            <span className="flex space-x-4 my-2">
+              🚀
+              <Typical
+                steps={[
+                  'Backend Development',
+                  3000,
+                  'Go Porgramming Language',
+                  3000,
+                  'Docker',
+                  2000,
+                  'Microservices Architecture',
+                  3000,
+                ]}
+                wrapper="span"
+                loop={Infinity}
+              />
+            </span>
           </div>
 
           <div className="grid grid-cols-3 items-center my-12 text-base xss:text-lg">
