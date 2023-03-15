@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
 import { motion } from 'framer-motion';
-import VerticalTextAnimation from '../common/VerticalTextAnimation';
 
 export function Banner() {
   return (
