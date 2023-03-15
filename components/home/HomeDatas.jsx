@@ -121,7 +121,7 @@ export const ServicesData = [
       {
         id: 3,
         service:
-          'Develop the backend (API) using NodeJS/ExpressJS or StrapiCMS',
+          'Develop the backend (API) using StrapiCMS',
       },
       {
         id: 4,
