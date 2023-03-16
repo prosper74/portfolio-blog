@@ -155,7 +155,7 @@ export function Banner() {
           </div>
 
           <hr className="bg-primary my-6" />
-          <div className="font-mono text-lg xs:text-2xl md:text-4xl">
+          <div className="font-mono text-md md:text-2xl">
             <h4> I am currently learning </h4>
             <span className="flex space-x-4 my-2">
               🚀
