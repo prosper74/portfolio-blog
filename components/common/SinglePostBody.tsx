@@ -94,7 +94,7 @@ export default function SinglePostBody({ post }: IProps) {
               <LikeIcon width="50" height="50" />
             )}
 
-            <span className="absolute top-0 left-0 px-1 py-[0.2rem] flex items-center justify-center bg-white rounded-full shadow-customBox text-gray-700 text-xs">
+            <span className="absolute top-0 left-0 px-1 py-[0.2rem] min-w-[22px] min-h-[22px] flex items-center justify-center bg-white rounded-full shadow-customBox text-gray-700 text-xs">
               {likes}
             </span>
           </button>

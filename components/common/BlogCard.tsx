@@ -71,7 +71,7 @@ export default function BlogCard({ allPosts }: IProps) {
                 <LikeIcon width="40" height="40" />
               )}
 
-              <span className="absolute top-0 left-0 px-[0.2rem] py-[0.14rem] flex items-center justify-center bg-white rounded-full shadow-customBox text-gray-700 text-xs">
+              <span className="absolute top-0 left-0 px-[0.2rem] py-[0.14rem] min-w-[22px] min-h-[22px] flex items-center justify-center bg-white rounded-full shadow-customBox text-gray-700 text-xs">
                 {post.like}
               </span>
             </div>
