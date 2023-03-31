@@ -22,6 +22,9 @@ export const skillData = [
       {
         name: '🚀 ReactJS, GatsbyJS, NextJS',
       },
+      {
+        name: '🚀 Typescript',
+      },
     ],
   },
   {
@@ -72,6 +75,26 @@ export const skillData = [
       },
       {
         name: '🚀 Corel Draw',
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Other Tech Skills',
+    icon: <GraphicsIcon width="40" height="40" fill="#9932cc" />,
+    experience: '',
+    skills: [
+      {
+        name: '🚀 Jest',
+      },
+      {
+        name: '🚀 GraphQL, REST API',
+      },
+      {
+        name: '🚀 Redux',
+      },
+      {
+        name: '🚀 Git',
       },
     ],
   },

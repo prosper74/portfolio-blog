@@ -20,7 +20,7 @@ export function Footer() {
               <GithubIcon width="25" height="25" fill="rgb(253, 245, 255)" />
             </a>
             <a
-              href="https://github.com/prosper74"
+              href="https://www.linkedin.com/in/prosper-atu/"
               target="_blank"
               rel="noreferrer"
             >
