@@ -11,7 +11,7 @@ export const skillData = [
     id: 1,
     name: 'Frontend Development',
     icon: <CurlyBracketIcon width="40" height="40" fill="#9932cc" />,
-    experience: '3+ Years experience',
+    experience: '2+ Years experience',
     skills: [
       {
         name: '🚀 HTML/CSS/JavaScript',
@@ -31,13 +31,13 @@ export const skillData = [
     id: 2,
     name: 'Backend Development',
     icon: <ServerNetworkIcon width="40" height="40" fill="#9932cc" />,
-    experience: '2+ Years experience',
+    experience: '',
     skills: [
       {
-        name: '🚀 NodeJs/ExpressJS',
+        name: '🚀 StrapiCMS, Headless WordPress',
       },
       {
-        name: '🚀 StrapiCMS, Headless WordPress',
+        name: '🚀 Basic NodeJs/ExpressJS',
       },
       {
         name: '🚀 Firebase, MongoDB, PostgreSQL, MySQL',
@@ -143,8 +143,7 @@ export const ServicesData = [
       },
       {
         id: 3,
-        service:
-          'Develop the backend (API) using NodeJS/ExpressJS or StrapiCMS',
+        service: 'Develop the backend (API) using StrapiCMS',
       },
       {
         id: 4,
@@ -290,7 +289,7 @@ export const QualificationsData = [
         date: '2011 - 2016',
       },
       {
-        id: 1,
+        id: 2,
         title: 'WASSCE',
         subtitle: 'Dave Christian Academy',
         date: '2006 - 2011',
@@ -298,23 +297,23 @@ export const QualificationsData = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     type: 'work',
     qualifications: [
       {
         id: 1,
         title: 'Software Engineer',
         subtitle: 'Metrovatech, Nigeria',
-        date: '2020 - 2022',
+        date: '2020 - 2023',
       },
       {
-        id: 1,
+        id: 2,
         title: 'WordPress Web Designer / Graphics Designer',
         subtitle: 'Codelab LLC, USA',
         date: '2018 - 2020',
       },
       {
-        id: 1,
+        id: 3,
         title: 'WordPress Web Designer / Graphics Designer',
         subtitle: 'Codelab LLC, USATelace Multimedia - Freelance',
         date: '2017 - 2020',
@@ -341,7 +340,7 @@ export const TestimonialData = [
   {
     id: 3,
     img: '/assets/abiye.jpg',
-    name: 'Abiye Samuel Lasbry',
+    name: 'Abiye Samuel',
     designation: 'C.E.O Punters Companion',
     desc: "He didn't just build the website, he also gave technical advice and support. nice guy",
   },

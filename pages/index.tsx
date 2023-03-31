@@ -1,3 +1,4 @@
+import { PostsProps } from '../components/common/interfaces';
 import {
   Banner,
   Portfolio,
@@ -10,7 +11,11 @@ import {
 } from '../components/home';
 import SEO from '../components/Seo';
 
-export default function Home() {
+interface IProps {
+  allPosts: PostsProps;
+}
+
+export default function Home({ allPosts }: IProps) {
   return (
     <>
       <SEO
@@ -25,9 +30,23 @@ export default function Home() {
         <Portfolio />
         <Qualifications />
         <Testimonials />
-        <BlogPosts />
+        <BlogPosts allPosts={allPosts} />
         <Contact />
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/homeposts`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const allPosts = await res.json();
+
+  return {
+    props: { allPosts: allPosts.data },
+  };
 }

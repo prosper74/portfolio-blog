@@ -44,6 +44,7 @@ module.exports = {
         secondaryDark: '#2B0E3A',
         body: 'rgb(253, 245, 255)',
         overlay: 'rgba(0, 0, 0, 0.5)',
+        bgHeader: 'rgb(253, 245, 255, 0.5)',
       },
       width: {
         130: '62rem',

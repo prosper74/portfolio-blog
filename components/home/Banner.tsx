@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
+import { motion } from 'framer-motion';
 
 export function Banner() {
   return (
@@ -67,7 +68,11 @@ export function Banner() {
               </a>
             </div>
 
-            <div className="col-span-4 sm:col-span-3">
+            <motion.div
+              animate={{ y: ['5%', '-5%', '5%'] }}
+              transition={{ ease: 'linear', duration: 3, repeat: Infinity }}
+              className="col-span-4 sm:col-span-3"
+            >
               <Image
                 src="/assets/blob_img.svg"
                 alt="Prosper image"
@@ -75,7 +80,7 @@ export function Banner() {
                 width={300}
                 height={300}
               />
-            </div>
+            </motion.div>
 
             {/* Scroll to next section icon */}
             <Link
@@ -124,6 +129,7 @@ export function Banner() {
               />
             </strong>
           </div>
+
           <div className="text-xl md:text-2xl mt-4">
             <p>
               I have over four (4) years of experience as a WordPress Developer
@@ -137,8 +143,37 @@ export function Banner() {
               I strive to follow best practices and use industry-standard tools,
               including Git-Flow, Test Driven Development, Continous Integration
               (Github Action), Linting (ESLint), Code Formatting (Prettier),
-              Package Management (NPM) and Build Tool (Webpack).
+              Package Management (NPM) and Build Tool (Webpack). I also
+              understand the importance of business growth
             </p>
+            <br />
+            <p>
+              I also understand the importance of business growth. I can analyse
+              the needs of a business, and contribute the specific value the
+              business needs using my engineering skills.
+            </p>
+          </div>
+
+          <hr className="bg-primary my-6" />
+          <div className="font-mono text-md md:text-2xl">
+            <h4> I am currently learning </h4>
+            <span className="flex space-x-4 my-2">
+              🚀
+              <Typical
+                steps={[
+                  'Backend Development',
+                  3000,
+                  'Go Porgramming Language',
+                  3000,
+                  'Docker',
+                  2000,
+                  'Microservices Architecture',
+                  3000,
+                ]}
+                wrapper="span"
+                loop={Infinity}
+              />
+            </span>
           </div>
 
           <div className="grid grid-cols-3 items-center my-12 text-base xss:text-lg">

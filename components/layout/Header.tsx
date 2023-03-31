@@ -63,11 +63,11 @@ export function Header() {
       </Head>
 
       <header
-        className={`max-md:shadow-top fixed max-md:bottom-0 md:top-0 inset-x-0 w-full font-medium bg-body z-[100] ${
+        className={`max-md:shadow-top fixed max-md:bottom-0 md:top-0 inset-x-0 w-full font-medium bg-body md:bg-bgHeader dark:bg-body md:backdrop-blur-[10px] z-[100] ${
           scrollup && 'shadow-lg'
         }`}
       >
-        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-2 md:px-10 lg:px-20 py-3">
+        <nav className="flex justify-between items-center gap-5 sm:container mx-auto px-4 md:px-10 lg:px-20 py-3">
           <Link
             href="/#home"
             scroll={false}
