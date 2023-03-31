@@ -314,9 +314,9 @@ export const QualificationsData = [
       },
       {
         id: 3,
-        title: 'WordPress Web Designer / Graphics Designer',
-        subtitle: 'Codelab LLC, USATelace Multimedia - Freelance',
-        date: '2017 - 2020',
+        title: 'Graphics Designer/Web Designer',
+        subtitle: 'Telace Multimedia',
+        date: '2015 - 2018',
       },
     ],
   },
