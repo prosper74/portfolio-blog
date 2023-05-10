@@ -132,31 +132,29 @@ export function Banner() {
 
           <div className="text-xl md:text-2xl mt-4">
             <p>
-              I have over four (4) years of experience as a WordPress Developer
-              and Graphics Designer. I also have over two (2) years of
-              experience building the web using ReactJS, NextJS and GatsbyJS,
-              and I have also done some backend development using ExpressJS and
-              StrapiCMS. I write about my experience as I learn and build.
+              Prosper Atu is a self-taught software engineer with 2 years of
+              experience in front-end web development and 4+ years of experience
+              as a WordPress Web Designer and Graphics Designer. Skilled in
+              HTML, CSS, JavaScript, ReactJs, NextJs, GatsbyJs, Node/Express,
+              Strapi, Golang, and other modern web development tools and
+              practices. Committed to building his skills and knowledge in
+              software engineering and design. Strong problem-solving skills and
+              ability to work independently and in a team environment.
+              Passionate about delivering high-quality results for clients and
+              projects. Currently seeking software engineering opportunities to
+              further grow his skills and make an impact in the industry.
             </p>
             <br />
             <p>
-              I strive to follow best practices and use industry-standard tools,
-              including Git-Flow, Test Driven Development, Continous Integration
-              (Github Action), Linting (ESLint), Code Formatting (Prettier),
-              Package Management (NPM) and Build Tool (Webpack). I also
-              understand the importance of business growth
-            </p>
-            <br />
-            <p>
-              I also understand the importance of business growth. I can analyse
-              the needs of a business, and contribute the specific value the
-              business needs using my engineering skills.
+              He also understand the importance of business growth. I can
+              analyse the needs of your business, and contribute the specific
+              value your business needs using his engineering skills.
             </p>
           </div>
 
           <hr className="bg-primary my-6" />
           <div className="font-mono text-md md:text-2xl">
-            <h4> I am currently learning </h4>
+            <h4> He is currently learning </h4>
             <span className="flex space-x-4 my-2">
               🚀
               <Typical

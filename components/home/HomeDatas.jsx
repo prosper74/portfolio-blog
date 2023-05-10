@@ -143,12 +143,12 @@ export const ServicesData = [
       },
       {
         id: 3,
-        service: 'Develop the backend (API) using StrapiCMS',
+        service: 'Develop the backend (API) using StrapiCMS or Go',
       },
       {
         id: 4,
         service:
-          'Build the User Interface using ReactJS/NextJS/GatsbyJS based on project requirements',
+          'Develop the User Interface using ReactJS/NextJS/GatsbyJS based on project requirements',
       },
       {
         id: 5,
