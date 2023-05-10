@@ -132,7 +132,7 @@ export function Banner() {
 
           <div className="text-xl md:text-2xl mt-4">
             <p>
-              Prosper Atu is a self-taught software engineer with 2 years of
+              Prosper Atu is a software engineer with 2 years of
               experience in front-end web development and 4+ years of experience
               as a WordPress Web Designer and Graphics Designer. Skilled in
               HTML, CSS, JavaScript, ReactJs, NextJs, GatsbyJs, Node/Express,
