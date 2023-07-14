@@ -37,7 +37,7 @@ export const skillData = [
         name: '🚀 StrapiCMS, Headless WordPress',
       },
       {
-        name: '🚀 Basic NodeJs/ExpressJS',
+        name: '🚀 Go, Basic NodeJs/ExpressJS',
       },
       {
         name: '🚀 Firebase, MongoDB, PostgreSQL, MySQL',
