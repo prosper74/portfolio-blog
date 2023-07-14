@@ -205,12 +205,12 @@ export const ServicesData = [
 export const PortfolioData = [
   {
     id: 1,
-    img: '/assets/loctech.png',
-    title: 'Loctech',
-    subtitle: 'Client Project',
+    img: '/assets/booking_app.png',
+    title: 'Booking App',
+    subtitle: 'Personal Project',
     description:
-      'Loctech is an e-learning app built with GatsbyJS and Strapi. This project exposed me to the JAMSTACK and CDN concepts, using apollo client, using gatsby plugins, understanding how gatsby cache works, setting up a PWA, using Markdown for contents and more.',
-    link: 'https://www.loctechng.com/',
+      'This is an Hotel Booking and Reservation app, developed with Go, HTML and Bootstrap. Developing this app, I learnt the concepts of backend development, Go programming language, Authentication, security, Request tokens, sessions, routing, Postgres, Database design  and management, setting DB migration files, and more...',
+    link: 'https://bookings-p.up.railway.app/',
   },
   {
     id: 2,
@@ -274,6 +274,15 @@ export const PortfolioData = [
     description:
       "Displays github user's profile in a beautiful UI. I learnt some ReactJS concept like page routing, using axios to fetch data (consumed third party API), using Material UI, sending mails from front-end with email-js and integrating scss",
     link: 'https://githubprofilebyprosper.netlify.app/',
+  },
+  {
+    id: 9,
+    img: '/assets/loctech.png',
+    title: 'Loctech',
+    subtitle: 'Client Project',
+    description:
+      'Loctech is an e-learning app built with GatsbyJS and Strapi. This project exposed me to the JAMSTACK and CDN concepts, using apollo client, using gatsby plugins, understanding how gatsby cache works, setting up a PWA, using Markdown for contents and more.',
+    link: 'https://www.loctechng.com/',
   },
 ];
 
