@@ -132,17 +132,17 @@ export function Banner() {
 
           <div className="text-xl md:text-2xl mt-4">
             <p>
-              Prosper Atu is a software engineer with 2 years of
-              experience in front-end web development and 4+ years of experience
-              as a WordPress Web Designer and Graphics Designer. Skilled in
-              HTML, CSS, JavaScript, ReactJs, NextJs, GatsbyJs, Node/Express,
-              Strapi, Golang, and other modern web development tools and
-              practices. Committed to building his skills and knowledge in
-              software engineering and design. Strong problem-solving skills and
-              ability to work independently and in a team environment.
-              Passionate about delivering high-quality results for clients and
-              projects. Currently seeking software engineering opportunities to
-              further grow his skills and make an impact in the industry.
+              Prosper Atu is a software engineer with 2 years of experience in
+              front-end web development and 4+ years of experience as a
+              WordPress Web Designer and Graphics Designer. Skilled in HTML,
+              CSS, JavaScript, ReactJs, NextJs, GatsbyJs, Node/Express, Strapi,
+              Golang, and other modern web development tools and practices.
+              Committed to building his skills and knowledge in software
+              engineering and design. Strong problem-solving skills and ability
+              to work independently and in a team environment. Passionate about
+              delivering high-quality results for clients and projects.
+              Currently seeking software engineering opportunities to further
+              grow his skills and make an impact in the industry.
             </p>
             <br />
             <p>
@@ -154,18 +154,16 @@ export function Banner() {
 
           <hr className="bg-primary my-6" />
           <div className="font-mono text-md md:text-2xl">
-            <h4> He is currently learning </h4>
+            <h4> He is currently </h4>
             <span className="flex space-x-4 my-2">
               🚀
               <Typical
                 steps={[
-                  'Backend Development',
+                  'Enrolled in ALX Software Engineering Program (15 months)',
                   3000,
-                  'Go Porgramming Language',
-                  3000,
-                  'Docker',
+                  'Learning Docker',
                   2000,
-                  'Microservices Architecture',
+                  'Learning Microservices Architecture',
                   3000,
                 ]}
                 wrapper="span"
