@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
 import { CookiesProvider } from 'react-cookie';
+import NextNProgress from 'nextjs-progressbar';
 import Layout from '../components/layout';
 import { useIsClient } from '../components/common/hooks/useIsClient';
 
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
             onExitComplete={() => window.scrollTo(0, 0)}
           >
             <Layout>
+              <NextNProgress color="#9932cc" />
               <Component {...pageProps} />
             </Layout>
           </AnimatePresence>

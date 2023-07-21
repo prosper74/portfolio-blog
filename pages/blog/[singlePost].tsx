@@ -36,7 +36,7 @@ export default function SinglePost({ post }: IProps) {
             Back to all posts
           </Link>
 
-          <div className="mt-4 md:mt-6">
+          <div className="mt-4 md:mt-6 lg:max-w-[70%] mx-auto">
             <SinglePostBody post={post} />
           </div>
         </motion.div>
