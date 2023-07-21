@@ -25,9 +25,9 @@ export default function Home({ allPosts }: IProps) {
 
       <main>
         <Banner />
+        <Portfolio />
         <Skills />
         <Services />
-        <Portfolio />
         <Qualifications />
         <Testimonials />
         <BlogPosts allPosts={allPosts} />
