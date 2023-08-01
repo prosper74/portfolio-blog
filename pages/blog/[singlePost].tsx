@@ -29,7 +29,7 @@ export default function SinglePost({ post }: IProps) {
           }}
           className="sm:container mx-auto px-4 md:px-10 lg:px-20 pb-16 md:pt-16"
         >
-          <Link href="/blog" className="flex items-center md:text-lg mt-2">
+          <Link href="/blog" className="flex items-center md:text-lg mt-2 dark:text-white text-gray-500">
             <span className="mt-1 rotate-[90deg] hover:translate-x-1 transition-all">
               <ArrowDownIcon width="35" height="35" fill="#9932cc" />
             </span>
