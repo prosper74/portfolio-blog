@@ -132,23 +132,29 @@ export function Banner() {
 
           <div className="text-xl md:text-2xl mt-4">
             <p>
-              Prosper Atu is a software engineer with 2 years of experience in
-              front-end web development and 4+ years of experience as a
-              WordPress Web Designer and Graphics Designer. Skilled in HTML,
-              CSS, JavaScript, ReactJs, NextJs, GatsbyJs, Node/Express, Strapi,
-              Golang, and other modern web development tools and practices.
-              Committed to building his skills and knowledge in software
-              engineering and design. Strong problem-solving skills and ability
-              to work independently and in a team environment. Passionate about
-              delivering high-quality results for clients and projects.
-              Currently seeking software engineering opportunities to further
-              grow his skills and make an impact in the industry.
+              Prosper Atu is a dedicated software engineer with a passion for
+              creating impactful digital solutions. With 2 years of hands-on
+              experience in front-end web development, Prosper is well-versed in
+              HTML, CSS, JavaScript, ReactJs, Go, and other modern web
+              development tools.
             </p>
             <br />
             <p>
-              He also understand the importance of business growth. I can
-              analyse the needs of your business, and contribute the specific
-              value your business needs using his engineering skills.
+              His recent collaboration on a JAMSTACK e-learning app for
+              Loctechng, where he led the frontend development using Gatsby JS,
+              showcases his expertise in building cutting-edge projects.
+              Additionally, with over 4 years of experience as a WordPress Web
+              Designer and Graphics Designer, Prosper is adept at delivering
+              high-quality results for clients.
+            </p>
+            <br />
+            <p>
+              If you&apos;re looking for a resourceful software engineer who can
+              bring your projects to life with a creative touch, Prosper would
+              be delighted to connect with you. He also understand the importance of
+              business growth. He can analyse the needs of your business, and
+              contribute the specific value your business needs using his
+              engineering skills.
             </p>
           </div>
 
