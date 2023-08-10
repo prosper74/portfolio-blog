@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Typical from 'react-typical';
 import { motion } from 'framer-motion';
+import { Tooltip } from 'flowbite-react';
 
 export function Banner() {
   return (
@@ -84,15 +85,17 @@ export function Banner() {
 
             {/* Scroll to next section icon */}
             <div className="flex items-center">
-              <button>
-                <Image
-                  src="/assets/icons/play_button.svg"
-                  alt="arrow down icon"
-                  className="ease-in-out duration-500 hover:translate-y-[0.5rem] w-24 h-24 mr-"
-                  width={35}
-                  height={35}
-                />
-              </button>
+              <Tooltip content="My Pitch Video" style="light">
+                <button>
+                  <Image
+                    src="/assets/icons/play_button.svg"
+                    alt="arrow down icon"
+                    className="ease-in-out duration-500 hover:translate-y-[0.5rem] w-20 h-20 mr-"
+                    width={35}
+                    height={35}
+                  />
+                </button>
+              </Tooltip>
 
               <Link
                 href="#about"
