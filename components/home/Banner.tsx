@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Typical from 'react-typical';
 import { motion } from 'framer-motion';
 import { Tooltip } from 'flowbite-react';
+import Textra from 'react-textra';
 
 export function Banner() {
   return (
@@ -85,12 +86,12 @@ export function Banner() {
 
             {/* Scroll to next section icon */}
             <div className="flex items-center">
-              <Tooltip content="My Pitch Video" style="light">
+              <Tooltip content="Watch my pitch video" style="light">
                 <button>
                   <Image
                     src="/assets/icons/play_button.svg"
                     alt="arrow down icon"
-                    className="ease-in-out duration-500 hover:translate-y-[0.5rem] w-20 h-20 mr-"
+                    className="ease-in-out duration-500 hover:translate-y-[0.5rem] w-24 h-24 mr-"
                     width={35}
                     height={35}
                   />
@@ -125,22 +126,14 @@ export function Banner() {
             <span>Hi, I&lsquo;m</span> <br />
             <span className="text-[2.8rem] md:text-7xl">Prosper Atu</span>
           </h1>
-          <div className="font-mono text-lg xs:text-2xl md:text-4xl flex space-x-3">
+          <div className="font-mono text-lg xs:text-2xl md:text-4xl flex space-x-3 h-14 xs:h-auto">
             <h4> A </h4>
-            <strong className="bg-primary text-body px-1">
-              <Typical
-                steps={[
-                  'Frontend Developer',
-                  2000,
-                  'Graphics Designer',
-                  2000,
-                  'WordPress Web Designer',
-                  2000,
-                  'Technical Writer',
-                  2000,
-                ]}
-                wrapper="span"
-                loop={Infinity}
+            <strong className="px-1">
+              <Textra
+                data={['Frontend Developer', 'Graphics Designer', 'WordPress Web Designer', 'Technical Writer']}
+                effect="flip"
+                duration={500}
+                stopDuration={5000}
               />
             </strong>
           </div>
@@ -176,20 +169,14 @@ export function Banner() {
           <hr className="bg-primary my-6" />
           <div className="font-mono text-md md:text-2xl">
             <h4> He is currently </h4>
-            <span className="flex space-x-4 my-2">
+            <span className="flex space-x-4 my-2 h-14 sm:h-auto">
               🚀
-              <Typical
-                steps={[
-                  'Enrolled in ALX Software Engineering Program (15 months)',
-                  3000,
-                  'Learning Docker',
-                  2000,
-                  'Learning Microservices Architecture',
-                  3000,
-                ]}
-                wrapper="span"
-                loop={Infinity}
-              />
+              <Textra
+                data={['Enrolled in ALX Software Engineering Program (15 months)', 'Learning Docker', 'Learning Microservices Architecture']}
+                effect="rightLeft"
+                duration={500}
+                stopDuration={5000}
+              />             
             </span>
           </div>
 
