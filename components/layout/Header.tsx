@@ -98,9 +98,27 @@ export function Header() {
                     height={25}
                     className="md:hidden"
                   />
-                  About
+                  About Me
                 </Link>
               </li>
+
+              <li>
+                <Link
+                  href="/#portfolio"
+                  scroll={false}
+                  className="flex items-center flex-col hover:text-primary"
+                >
+                  <Image
+                    src="/assets/icons/file_icon.svg"
+                    alt="user icon"
+                    width={25}
+                    height={25}
+                    className="md:hidden"
+                  />
+                  Portfolio
+                </Link>
+              </li>
+
               <li>
                 <Link
                   href="/#skills"
@@ -117,6 +135,7 @@ export function Header() {
                   Skills
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/#services"
@@ -133,22 +152,7 @@ export function Header() {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#portfolio"
-                  scroll={false}
-                  className="flex items-center flex-col hover:text-primary"
-                >
-                  <Image
-                    src="/assets/icons/file_icon.svg"
-                    alt="user icon"
-                    width={25}
-                    height={25}
-                    className="md:hidden"
-                  />
-                  Projects
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/blog"
