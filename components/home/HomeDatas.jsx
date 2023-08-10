@@ -205,6 +205,15 @@ export const ServicesData = [
 export const PortfolioData = [
   {
     id: 1,
+    img: '/assets/flow_wireframe.jpg',
+    title: 'FLOWS',
+    subtitle: 'Team Project',
+    description:
+      'FLOWS (Flood Warning System) is data-driven tool which will leverage machine learning models to detect when there is a high possibility of a flood occurring in the future and send out warnings to the Government and the Citizens in the coastal areas.',
+    link: 'https://miro.com/app/board/uXjVM3lK070=/?share_link_id=497279673534',
+  },
+  {
+    id: 2,
     img: '/assets/booking_app.png',
     title: 'Booking App',
     subtitle: 'Personal Project',
@@ -213,7 +222,7 @@ export const PortfolioData = [
     link: 'https://bookings-p.up.railway.app/',
   },
   {
-    id: 2,
+    id: 3,
     img: '/assets/safe_haven.jpg',
     title: 'Safe Haven',
     subtitle: 'Personal Project',
@@ -222,7 +231,7 @@ export const PortfolioData = [
     link: 'https://safe-haven-fe.vercel.app/',
   },
   {
-    id: 3,
+    id: 4,
     img: '/assets/tantalizers.png',
     title: 'The Tantalizers',
     subtitle: 'Client Project',
@@ -231,22 +240,13 @@ export const PortfolioData = [
     link: 'https://thetantalizersca.com/',
   },
   {
-    id: 4,
+    id: 5,
     img: '/assets/reactportfolio.jpg',
     title: 'React Portfolio',
     subtitle: 'Personal Project',
     description:
       'A react personal portfolio website with a cool animations and smooth scroll. The goal of this project is to build a react app with less libraries and dependencies.',
     link: 'https://dr0eu.csb.app/',
-  },
-  {
-    id: 5,
-    img: '/assets/chappelle.jpg',
-    title: 'Chappelle Daycare',
-    subtitle: 'Client Project',
-    description:
-      'A Daycare website built with WordPress. With features like online booking, enrollment form, blog, PTA section, admission portal, programs and syllabus, and more...',
-    link: 'https://chappelledaycare.ca/',
   },
   {
     id: 6,
@@ -259,15 +259,6 @@ export const PortfolioData = [
   },
   {
     id: 7,
-    img: '/assets/gtafricamart.jpg',
-    title: 'GT African Mart',
-    subtitle: 'Client Project',
-    description:
-      'GT African mart is full e-commerce project. with a lot of features like payment, authentication, security etc. Built with wordpress',
-    link: 'https://gtafricanmart.ca/',
-  },
-  {
-    id: 8,
     img: '/assets/githubProfiler.jpg',
     title: 'Github Profiler',
     subtitle: 'Personal Project',
@@ -276,7 +267,7 @@ export const PortfolioData = [
     link: 'https://githubprofilebyprosper.netlify.app/',
   },
   {
-    id: 9,
+    id: 8,
     img: '/assets/loctech.png',
     title: 'Loctech',
     subtitle: 'Client Project',

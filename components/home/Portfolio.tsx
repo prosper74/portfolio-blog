@@ -101,7 +101,39 @@ export function Portfolio() {
                       >
                         <div className="bg-body dark:bg-secondary py-4 px-2 rounded-xl">
                           <div className="mb-4">
-                            <p className="text-md mb-3">{d.description}</p>
+                            <p className={`text-md mb-2 max-h-[18.5rem] overflow-x-auto ${d.title === 'FLOWS' && 'max-h-[13.5rem]'}`}>{d.description}</p>
+
+                            {d.title === 'FLOWS' && (
+                              <>
+                                <a
+                                  href="/assets/cv/slide_deck.pdf"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center gap-2 max-w-[10rem] p-2 font-medium text-body shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] mb-2"
+                                >
+                                  View SlideDeck
+                                  <LinkIcon
+                                    width={18}
+                                    height={18}
+                                    fill="#9932cc"
+                                  />
+                                </a>
+
+                                <a
+                                  href="https://www.youtube.com/watch?v=Oe_-EBB8SUI"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center gap-2 max-w-[12rem] p-2 font-medium text-body shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem]"
+                                >
+                                  Watch Presentation
+                                  <LinkIcon
+                                    width={18}
+                                    height={18}
+                                    fill="#9932cc"
+                                  />
+                                </a>
+                              </>
+                            )}
                           </div>
 
                           <div className="grid grid-cols-4 items-center gap-5">
@@ -109,7 +141,7 @@ export function Portfolio() {
                               href={d.link}
                               target="_blank"
                               rel="noreferrer"
-                              className="col-span-3 flex items-center justify-center gap-2 mt-auto py-2 px-[10px] font-medium text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] max-w-full"
+                              className="col-span-3 flex items-center justify-center gap-2 mt-auto py-2 px-2 font-medium text-body bg-primary hover:bg-secondary shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] max-w-full"
                             >
                               View Project
                               <LinkIcon width={18} height={18} fill="#9932cc" />
