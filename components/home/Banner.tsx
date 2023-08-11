@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Typical from 'react-typical';
 import { motion } from 'framer-motion';
 import { Tooltip } from 'flowbite-react';
 import Textra from 'react-textra';
 
 export function Banner() {
+  const [openModal, setOpenModal] = useState(false);
+  
   return (
     <>
       {/* Banner section  */}
@@ -130,7 +132,12 @@ export function Banner() {
             <h4> A </h4>
             <strong className="px-1">
               <Textra
-                data={['Frontend Developer', 'Graphics Designer', 'WordPress Web Designer', 'Technical Writer']}
+                data={[
+                  'Frontend Developer',
+                  'Graphics Designer',
+                  'WordPress Web Designer',
+                  'Technical Writer',
+                ]}
                 effect="flip"
                 duration={500}
                 stopDuration={5000}
@@ -172,11 +179,15 @@ export function Banner() {
             <span className="flex space-x-4 my-2 h-14 sm:h-auto">
               🚀
               <Textra
-                data={['Enrolled in ALX Software Engineering Program (15 months)', 'Learning Docker', 'Learning Microservices Architecture']}
+                data={[
+                  'Enrolled in ALX Software Engineering Program (15 months)',
+                  'Learning Docker',
+                  'Learning Microservices Architecture',
+                ]}
                 effect="rightLeft"
                 duration={500}
                 stopDuration={5000}
-              />             
+              />
             </span>
           </div>
 

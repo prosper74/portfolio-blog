@@ -109,7 +109,7 @@ export function Portfolio() {
                                   href="/assets/cv/slide_deck.pdf"
                                   target="_blank"
                                   rel="noreferrer"
-                                  className="flex items-center gap-2 max-w-[10rem] p-2 font-medium text-body shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] mb-2"
+                                  className="flex items-center gap-2 max-w-[10rem] p-2 font-medium shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] mb-2"
                                 >
                                   View SlideDeck
                                   <LinkIcon
@@ -123,7 +123,7 @@ export function Portfolio() {
                                   href="https://www.youtube.com/watch?v=Oe_-EBB8SUI"
                                   target="_blank"
                                   rel="noreferrer"
-                                  className="flex items-center gap-2 max-w-[12rem] p-2 font-medium text-body shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem]"
+                                  className="flex items-center gap-2 max-w-[12rem] p-2 font-medium shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem]"
                                 >
                                   Watch Presentation
                                   <LinkIcon
@@ -166,6 +166,8 @@ export function Portfolio() {
               </Swiper>
             </div>
           </div>
+
+          
         </div>
       </section>
     </>
