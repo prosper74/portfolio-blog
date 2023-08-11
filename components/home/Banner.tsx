@@ -93,9 +93,9 @@ export function Banner() {
                   <Image
                     src="/assets/icons/play_button.svg"
                     alt="arrow down icon"
-                    className="ease-in-out duration-500 hover:translate-y-[0.5rem] w-24 h-24 mr-"
-                    width={35}
-                    height={35}
+                    className="ease-in-out duration-500 hover:translate-y-[0.5rem] mr-2 max-w-[4rem] md:max-w-[6rem]"
+                    width={95}
+                    height={95}
                   />
                 </button>
               </Tooltip>
@@ -103,14 +103,14 @@ export function Banner() {
               <Link
                 href="#about"
                 scroll={false}
-                className="w-10 sm:justify-self-end transition-all ml-4"
+                className=" sm:justify-self-end transition-all ml-4"
               >
                 <Image
                   src="/assets/icons/arrow_down_icon.svg"
                   alt="arrow down icon"
-                  className="ease-in-out duration-500 hover:translate-y-[0.5rem]"
-                  width={35}
-                  height={35}
+                  className="ease-in-out duration-500 hover:translate-y-[0.5rem] max-w-[2rem]"
+                  width={40}
+                  height={40}
                 />
               </Link>
             </div>
