@@ -62,7 +62,7 @@ export function Portfolio() {
                           loading="lazy"
                           width={300}
                           height={180}
-                          className="w-[300px] h-[220px] rounded-xl justify-self-center object-cover"
+                          className="w-[300px] h-[220px] rounded-xl justify-self-center object-cover mb-2"
                         />
 
                         <div>

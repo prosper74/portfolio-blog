@@ -207,7 +207,7 @@ export const PortfolioData = [
     id: 1,
     img: '/assets/flow_wireframe.jpg',
     title: 'FLOWS',
-    subtitle: 'Team Project',
+    subtitle: 'ALX Team Project',
     description:
       'FLOWS (Flood Warning System) is data-driven tool which will leverage machine learning models to detect when there is a high possibility of a flood occurring in the future and send out warnings to the Government and the Citizens in the coastal areas.',
     link: 'https://miro.com/app/board/uXjVM3lK070=/?share_link_id=497279673534',
@@ -219,7 +219,7 @@ export const PortfolioData = [
     subtitle: 'Personal Project',
     description:
       'This is an Hotel Booking and Reservation app, developed with Go, HTML and Bootstrap. Developing this app, I learnt the concepts of backend development, Go programming language, Authentication, security, Request tokens, sessions, routing, Postgres, Database design  and management, setting DB migration files, and more...',
-    link: 'https://bookings-p.up.railway.app/',
+    link: 'https://go-booking.onrender.com',
   },
   {
     id: 3,
