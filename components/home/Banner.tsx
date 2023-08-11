@@ -2,12 +2,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Tooltip } from 'flowbite-react';
+import { Tooltip, Modal } from 'flowbite-react';
 import Textra from 'react-textra';
 
 export function Banner() {
   const [openModal, setOpenModal] = useState(false);
-  
+
   return (
     <>
       {/* Banner section  */}
@@ -86,10 +86,10 @@ export function Banner() {
               />
             </motion.div>
 
-            {/* Scroll to next section icon */}
+            {/* Elevator pitch video and Scroll to next section icon */}
             <div className="flex items-center">
               <Tooltip content="Watch my pitch video" style="light">
-                <button>
+                <button onClick={() => setOpenModal(!openModal)}>
                   <Image
                     src="/assets/icons/play_button.svg"
                     alt="arrow down icon"
@@ -116,6 +116,17 @@ export function Banner() {
             </div>
           </div>
         </div>
+
+        <Modal show={openModal} onClose={() => setOpenModal(false)}>
+          <Modal.Header>Elevator Pitch</Modal.Header>
+          <Modal.Body>
+            {/* <div className="space-y-6"> */}
+              <h1 className='font-bold text-7xl text-center my-16'>
+                Coming Soon
+              </h1>
+            {/* </div> */}
+          </Modal.Body>
+        </Modal>
       </section>
 
       {/* About me section  */}
