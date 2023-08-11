@@ -187,7 +187,7 @@ export function Banner() {
           <hr className="bg-primary my-6" />
           <div className="font-mono text-md md:text-2xl">
             <h4> He is currently </h4>
-            <span className="flex space-x-4 my-2 h-14 sm:h-auto">
+            <span className="flex space-x-4 my-2 h-12 md:h-auto">
               🚀
               <Textra
                 data={[
@@ -195,7 +195,7 @@ export function Banner() {
                   'Learning Docker',
                   'Learning Microservices Architecture',
                 ]}
-                effect="rightLeft"
+                effect="topDown"
                 duration={500}
                 stopDuration={5000}
               />
