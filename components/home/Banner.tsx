@@ -139,12 +139,12 @@ export function Banner() {
             <span>Hi, I&lsquo;m</span> <br />
             <span className="text-[2.8rem] md:text-7xl">Prosper Atu</span>
           </h1>
-          <div className="font-mono text-lg xs:text-2xl md:text-4xl flex space-x-3 h-14 xs:h-auto">
+          <div className="font-mono text-lg xs:text-2xl md:text-4xl flex space-x-3 h-16 sm:h-auto">
             <h4> A </h4>
             <strong className="px-1">
               <Textra
                 data={[
-                  'Frontend Developer',
+                  'Software Engineer (Frontend)',
                   'Graphics Designer',
                   'WordPress Web Designer',
                   'Technical Writer',
