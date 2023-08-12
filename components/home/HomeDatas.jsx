@@ -3,6 +3,7 @@ import {
   ServerNetworkIcon,
   WordPressIconIcon,
   GraphicsIcon,
+  OtherSkillsIcon,
   PulseIcon,
 } from '../common/svgIcons';
 
@@ -81,7 +82,7 @@ export const skillData = [
   {
     id: 5,
     name: 'Other Tech Skills',
-    icon: <GraphicsIcon width="40" height="40" fill="#9932cc" />,
+    icon: <OtherSkillsIcon width="40" height="40" fill="#9932cc" />,
     experience: '',
     skills: [
       {
