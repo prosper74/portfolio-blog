@@ -130,7 +130,7 @@ export function Portfolio() {
                             {d.title === 'FLOWS' && (
                               <>
                                 <a
-                                  href="/assets/cv/slide_deck.pdf"
+                                  href="/assets/cv/presentation.pdf"
                                   target="_blank"
                                   rel="noreferrer"
                                   className="flex items-center gap-2 max-w-[10rem] p-2 font-medium shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] mb-2"
