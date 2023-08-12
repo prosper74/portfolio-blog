@@ -212,7 +212,6 @@ export const PortfolioData = [
     description:
       'FLOWS (Flood Warning System) is data-driven tool which will leverage machine learning models to detect when there is a high possibility of a flood occurring in the future and send out warnings to the Government and the Citizens in the coastal areas.',
     link: 'https://miro.com/app/board/uXjVM3lK070=/?share_link_id=497279673534',
-    githubLink: '',
   },
   {
     id: 2,
@@ -260,7 +259,6 @@ export const PortfolioData = [
     description:
       'A simple portfolio website built with GatsbyJS. In this project I learnt how to create page template using gatsby-node.js file, how to create an infinite bubble animation with HTML/CSS/JavaScript, how to use gatsby plugins for optimization (especially the gatsby image plugins).',
     link: 'https://gatsbyappbyprosper.netlify.app/',
-    githubLink: '',
   },
   {
     id: 7,

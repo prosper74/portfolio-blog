@@ -109,7 +109,7 @@ export function Portfolio() {
                               {d.description}
                             </p>
 
-                            {d.githubLink !== '' && (
+                            {d.githubLink && (
                               <>
                                 <a
                                   href={d.githubLink}
