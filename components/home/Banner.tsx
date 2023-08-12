@@ -144,10 +144,8 @@ export function Banner() {
             <strong className="px-1">
               <Textra
                 data={[
-                  'Software Engineer (Frontend)',
+                  'Software Engineer',
                   'Graphics Designer',
-                  'WordPress Web Designer',
-                  'Technical Writer',
                 ]}
                 effect="flip"
                 duration={500}
