@@ -212,6 +212,7 @@ export const PortfolioData = [
     description:
       'FLOWS (Flood Warning System) is data-driven tool which will leverage machine learning models to detect when there is a high possibility of a flood occurring in the future and send out warnings to the Government and the Citizens in the coastal areas.',
     link: 'https://miro.com/app/board/uXjVM3lK070=/?share_link_id=497279673534',
+    githubLink: '',
   },
   {
     id: 2,
@@ -221,6 +222,7 @@ export const PortfolioData = [
     description:
       'This is an Hotel Booking and Reservation app, developed with Go, HTML and Bootstrap. Developing this app, I learnt the concepts of backend development, Go programming language, Authentication, security, Request tokens, sessions, routing, Postgres, Database design  and management, setting DB migration files, and more...',
     link: 'https://go-booking.onrender.com',
+    githubLink: 'https://github.com/prosper74/booking-project',
   },
   {
     id: 3,
@@ -230,6 +232,7 @@ export const PortfolioData = [
     description:
       'A real estate website, built with NextJS and Strapi. In this project I learnt how to setup NextJS with typescript, redux, tailwindcss, eslint, Jest, Prettier. I also learnt how to; write test with Jest and React testing library, use cloudinary to store and retrieve images, use zod for form validation, use NextJS static/dynamic props, and more...',
     link: 'https://safe-haven-fe.vercel.app/',
+    githubLink: 'https://github.com/prosper74/safe-haven-fe',
   },
   {
     id: 4,
@@ -257,6 +260,7 @@ export const PortfolioData = [
     description:
       'A simple portfolio website built with GatsbyJS. In this project I learnt how to create page template using gatsby-node.js file, how to create an infinite bubble animation with HTML/CSS/JavaScript, how to use gatsby plugins for optimization (especially the gatsby image plugins).',
     link: 'https://gatsbyappbyprosper.netlify.app/',
+    githubLink: '',
   },
   {
     id: 7,

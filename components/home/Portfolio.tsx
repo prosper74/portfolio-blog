@@ -101,7 +101,31 @@ export function Portfolio() {
                       >
                         <div className="bg-body dark:bg-secondary py-4 px-2 rounded-xl">
                           <div className="mb-4">
-                            <p className={`text-md mb-2 max-h-[18.5rem] overflow-x-auto ${d.title === 'FLOWS' && 'max-h-[13.5rem]'}`}>{d.description}</p>
+                            <p
+                              className={`text-md mb-2 max-h-[18.5rem] overflow-y-auto ${
+                                d.title === 'FLOWS' && 'max-h-[13.5rem]'
+                              }`}
+                            >
+                              {d.description}
+                            </p>
+
+                            {d.githubLink !== '' && (
+                              <>
+                                <a
+                                  href={d.githubLink}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center gap-2 max-w-[6rem] p-2 font-medium shadow-button rounded-lg ease-in-out duration-100 hover:translate-y-[0.25rem] mb-2"
+                                >
+                                  Github
+                                  <LinkIcon
+                                    width={18}
+                                    height={18}
+                                    fill="#9932cc"
+                                  />
+                                </a>
+                              </>
+                            )}
 
                             {d.title === 'FLOWS' && (
                               <>
@@ -166,8 +190,6 @@ export function Portfolio() {
               </Swiper>
             </div>
           </div>
-
-          
         </div>
       </section>
     </>
