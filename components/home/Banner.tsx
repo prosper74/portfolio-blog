@@ -120,11 +120,9 @@ export function Banner() {
         <Modal show={openModal} onClose={() => setOpenModal(false)}>
           <Modal.Header>Elevator Pitch</Modal.Header>
           <Modal.Body>
-            {/* <div className="space-y-6"> */}
-              <h1 className='font-bold text-7xl text-center my-16'>
-                Coming Soon
-              </h1>
-            {/* </div> */}
+            <h1 className="font-bold text-7xl text-center my-16">
+              Coming Soon
+            </h1>
           </Modal.Body>
         </Modal>
       </section>
@@ -143,10 +141,7 @@ export function Banner() {
             <h4> A </h4>
             <strong className="px-1">
               <Textra
-                data={[
-                  'Software Engineer',
-                  'Graphics Designer',
-                ]}
+                data={['Software Engineer', 'Graphics Designer']}
                 effect="flip"
                 duration={500}
                 stopDuration={5000}
