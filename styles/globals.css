@@ -98,7 +98,7 @@ a {
 /* Portfolio swiper css end */
 
 /* Markdown styles */
-.markdown-view h3, 
+.markdown-view h3,
 .markdown-view h4 {
   margin-top: 1rem;
   font-size: 1.6rem;
@@ -152,3 +152,19 @@ a {
   word-wrap: break-word;
 }
 /* End of markdown styles  */
+
+.elevator-pitch iframe {
+  height: 100%;
+}
+
+@media only screen and (min-width: 420px) {
+  .elevator-pitch iframe {
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .elevator-pitch iframe {
+    height: 360px;
+  }
+}

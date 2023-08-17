@@ -120,9 +120,17 @@ export function Banner() {
         <Modal show={openModal} onClose={() => setOpenModal(false)}>
           <Modal.Header>Elevator Pitch</Modal.Header>
           <Modal.Body>
-            <h1 className="font-bold text-7xl text-center my-16">
-              Coming Soon
-            </h1>
+            <div className='elevator-pitch'>
+              <iframe
+                src="https://www.youtube.com/embed/Ab-OtyWhENE"
+                title="flood warning system"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
           </Modal.Body>
         </Modal>
       </section>
