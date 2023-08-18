@@ -47,7 +47,7 @@ export const skillData = [
   },
   {
     id: 3,
-    name: 'Web Deign - WordPress',
+    name: 'Web Design - WordPress',
     icon: <WordPressIconIcon width="40" height="40" fill="#9932cc" />,
     experience: '4+ Years experience',
     skills: [
