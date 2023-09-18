@@ -357,8 +357,8 @@ export const photos = [
     height: 3
   },
   {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-    title: "bedroom image",
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695035020/favour_foods_asrjey.jpg",
+    title: "Favour Foods",
     width: 1,
     height: 1
   },

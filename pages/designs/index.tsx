@@ -51,11 +51,13 @@ export default function Blog() {
 
             <div className="my-8">
               <Gallery photos={photos} onClick={openLightbox} />
+              {/* @ts-ignore */}
               <ModalGateway>
                 {viewerIsOpen ? (
                   <Modal onClose={closeLightbox}>
                     <Carousel
                       currentIndex={currentImage}
+                      // @ts-ignore
                       views={photos.map((x) => ({
                         ...x,
                         srcset: x.src,
