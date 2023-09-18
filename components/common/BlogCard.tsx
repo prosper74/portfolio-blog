@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import Image from 'next/image';
 import Link from 'next/link';
-import { timeSince } from './dateFunction';
-import { PostsProps } from './interfaces';
+import { timeSince } from './helpers/dateFunction';
+import { PostsProps } from './helpers/interfaces';
 import {
   ArrowDownIcon,
   CalendarIcon,

@@ -1,4 +1,4 @@
-import { PostsProps } from '../components/common/interfaces';
+import { PostsProps } from '../components/common/helpers/interfaces';
 import {
   Banner,
   Portfolio,

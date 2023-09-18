@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { PostsProps } from '../common/interfaces';
+import { PostsProps } from '../common/helpers/interfaces';
 import BlogCard from '../common/BlogCard';
 import PostsNotFound from '../common/PostsNotFound';
 

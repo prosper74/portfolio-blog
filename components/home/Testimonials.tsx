@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { TestimonialData } from './HomeDatas';
+import { TestimonialData } from '../common/helpers/constants';
 import { StarIcon } from '../common/svgIcons';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -5,7 +5,7 @@ import {
   GraphicsIcon,
   OtherSkillsIcon,
   PulseIcon,
-} from '../common/svgIcons';
+} from '../svgIcons';
 
 export const skillData = [
   {

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { pageVariants } from '../common/animationVariants';
+import { pageVariants } from '../common/helpers/animationVariants';
 
 export default function Layout({ children }: any) {
   const [scrollup, setScrollup] = useState(false);

@@ -12,11 +12,11 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from 'react-share';
-import { timeSince } from './dateFunction';
-import { PostsProps } from './interfaces';
+import { timeSince } from './helpers/dateFunction';
+import { PostsProps } from './helpers/interfaces';
 import { CalendarIcon, FavouriteIcon, LikeIcon } from './svgIcons';
-import { LoaderImage } from './loader';
-import { socialButtonVariants } from './animationVariants';
+import { LoaderImage } from './helpers/loader';
+import { socialButtonVariants } from './helpers/animationVariants';
 
 interface IProps {
   post: PostsProps;

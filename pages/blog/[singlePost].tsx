@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { PostsProps } from '../../components/common/interfaces';
+import { PostsProps } from '../../components/common/helpers/interfaces';
 import SinglePostBody from '../../components/common/SinglePostBody';
 import { ArrowDownIcon } from '../../components/common/svgIcons';
 import SEO from '../../components/Seo';

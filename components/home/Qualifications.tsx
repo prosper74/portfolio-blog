@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { QualificationsData } from './HomeDatas';
+import { QualificationsData } from '../common/helpers/constants';
 import { BagIcon, CalendarIcon, GraduationCapIcon } from '../common/svgIcons';
 
 export function Qualifications() {

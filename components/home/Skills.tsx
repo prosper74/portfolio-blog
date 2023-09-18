@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { skillData } from './HomeDatas';
+import { skillData } from '../common/helpers/constants';
 import { ArrowDownIcon } from '../common/svgIcons';
 
 export function Skills() {

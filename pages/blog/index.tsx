@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import BlogCard from '../../components/common/BlogCard';
-import { PostsProps } from '../../components/common/interfaces';
+import { PostsProps } from '../../components/common/helpers/interfaces';
 import PostsNotFound from '../../components/common/PostsNotFound';
 import SEO from '../../components/Seo';
 

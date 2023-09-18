@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { SeoProps } from './common/interfaces';
+import { SeoProps } from './common/helpers/interfaces';
 
 export default function SEO({ pageTitle, pageDescription }: SeoProps) {
   return (

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import BlogCard from '../../components/common/BlogCard';
-import { PostsProps } from '../../components/common/interfaces';
+import { PostsProps } from '../../components/common/helpers/interfaces';
 import PostsNotFound from '../../components/common/PostsNotFound';
 import SEO from '../../components/Seo';
 
@@ -12,7 +11,7 @@ export default function Blog({ allPosts }: IProps) {
   return (
     <>
       <SEO
-        pageTitle="Blog | Let's learn together"
+        pageTitle="Designs | Checkout my designs"
         pageDescription="This is my personal portfolio and blog. Feel at home as we build together"
       />
 
@@ -30,14 +29,15 @@ export default function Blog({ allPosts }: IProps) {
         >
           <div>
             <div className="text-center">
-              <h2 className="text-4xl md:text-7xl font-bold md:mt-12">Blog</h2>
+              <h2 className="text-4xl md:text-7xl font-bold md:mt-12">Graphic Designs</h2>
+              <p className="text-xl md:text-2xl">I started my career as a Graphics designer. Here are some of my designs</p>
             </div>
 
-            {allPosts.length === 0 ? (
+            {/* {allPosts.length === 0 ? (
               <PostsNotFound />
             ) : (
               <BlogCard allPosts={allPosts} />
-            )}
+            )} */}
           </div>
         </motion.div>
       </main>

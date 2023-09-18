@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import { PortfolioData } from './HomeDatas';
+import { PortfolioData } from '../common/helpers/constants';
 import { ArrowDownIcon, CloseIcon, LinkIcon } from '../common/svgIcons';
 
 // Import Swiper React components

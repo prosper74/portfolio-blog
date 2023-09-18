@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ServicesData } from './HomeDatas';
+import { ServicesData } from '../common/helpers/constants';
 import { ArrowDownIcon, CheckIcon, CloseIcon } from '../common/svgIcons';
 
 export function Services() {
