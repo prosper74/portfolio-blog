@@ -5,19 +5,20 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photos } from '../../components/common/helpers/constants';
 import SEO from '../../components/Seo';
 
+import PhotoAlbum from 'react-photo-album';
+
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+
+// import optional lightbox plugins
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
+
 export default function Blog() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event: any, { photo, index }: any) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+  const [index, setIndex] = useState(-1);
 
   return (
     <>
@@ -50,25 +51,20 @@ export default function Blog() {
             </div>
 
             <div className="my-8">
-              <Gallery photos={photos} onClick={openLightbox} />
-              {/* @ts-ignore */}
-              <ModalGateway>
-                {viewerIsOpen ? (
-                  <Modal onClose={closeLightbox}>
-                    <Carousel
-                      currentIndex={currentImage}
-                      // @ts-ignore
-                      views={photos.map((x) => ({
-                        ...x,
-                        srcset: x.src,
-                        caption: x.title,
-                        width: x.width,
-                        height: x.height,
-                      }))}
-                    />
-                  </Modal>
-                ) : null}
-              </ModalGateway>
+              <PhotoAlbum
+                photos={photos}
+                layout="rows"
+                targetRowHeight={250}
+                onClick={({ index }) => setIndex(index)}
+              />
+              <Lightbox
+                slides={photos}
+                open={index >= 0}
+                index={index}
+                close={() => setIndex(-1)}
+                // enable optional lightbox plugins
+                plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+              />
             </div>
           </div>
         </motion.div>

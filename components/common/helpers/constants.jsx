@@ -353,55 +353,55 @@ export const photos = [
   {
     src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg",
     title: "Lunch Logistics Car Rental Service",
-    width: 4,
-    height: 3
+    width: 720,
+    height: 720
   },
   {
     src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695035020/favour_foods_asrjey.jpg",
     title: "Favour Foods",
-    width: 1,
-    height: 1
+    width: 1740,
+    height: 2480
   },
   {
     src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
     title: "bedroom image",
-    width: 3,
-    height: 4
+    width: 900,
+    height: 1200
   },
   {
     src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
     title: "bedroom image",
-    width: 3,
-    height: 4
+    width: 900,
+    height: 1200
   },
   {
     src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
     title: "bedroom image",
-    width: 3,
-    height: 4
+    width: 900,
+    height: 1200
   },
   {
     src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
     title: "bedroom image",
-    width: 4,
-    height: 3
+    width: 1200,
+    height: 900
   },
   {
     src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
     title: "bedroom image",
-    width: 3,
-    height: 4
+    width: 900,
+    height: 1200
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
     title: "bedroom image",
-    width: 4,
-    height: 3
+    width: 1200,
+    height: 900
   },
   {
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     title: "bedroom image",
-    width: 4,
-    height: 3
+    width: 1200,
+    height: 900
   }
 ];
