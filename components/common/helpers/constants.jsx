@@ -363,22 +363,22 @@ export const photos = [
     height: 2480
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-    title: "bedroom image",
-    width: 900,
-    height: 1200
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695072773/kpp_design_ligb0k.jpg",
+    title: "Kings Place Parish Program",
+    width: 1740,
+    height: 2480
   },
   {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    title: "bedroom image",
-    width: 900,
-    height: 1200
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695071961/car_rentals_2_f2idnl.jpg",
+    title: "Lunch Logistics Car Rental Service",
+    width: 720,
+    height: 720
   },
   {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    title: "bedroom image",
-    width: 900,
-    height: 1200
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695072782/smhos_nog_s95k5e.jpg",
+    title: "Salvation Ministries - 5 Nights of Glory",
+    width: 2480,
+    height: 1740
   },
   {
     src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
