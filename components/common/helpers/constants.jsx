@@ -351,8 +351,8 @@ export const TestimonialData = [
 
 export const photos = [
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1682616618/room3_jnhifo.jpg",
-    title: "bedroom image",
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg",
+    title: "Lunch Logistics Car Rental Service",
     width: 4,
     height: 3
   },
