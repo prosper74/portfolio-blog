@@ -381,27 +381,27 @@ export const photos = [
     height: 1740
   },
   {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-    title: "bedroom image",
-    width: 1200,
-    height: 900
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078436/bummi_design_ni4bjr.jpg",
+    title: "Physical Makeup Beauty Classes",
+    width: 720,
+    height: 720
   },
   {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-    title: "bedroom image",
-    width: 900,
-    height: 1200
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078441/daves_treat_burger_s5bwfg.jpg",
+    title: "Dave's Treat Burger",
+    width: 720,
+    height: 720
   },
   {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-    title: "bedroom image",
-    width: 1200,
-    height: 900
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078451/probus_logistics_1_enyoig.jpg",
+    title: "Probus Logistics Services",
+    width: 720,
+    height: 720
   },
   {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    title: "bedroom image",
-    width: 1200,
-    height: 900
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078458/probus_logistics_2_bzbuzu.jpg",
+    title: "Probus Logistics Services",
+    width: 720,
+    height: 720
   }
 ];
