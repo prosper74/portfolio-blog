@@ -1,12 +1,8 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Gallery from 'react-photo-gallery';
-import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photos } from '../../components/common/helpers/constants';
 import SEO from '../../components/Seo';
-
 import PhotoAlbum from 'react-photo-album';
-
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
@@ -72,17 +68,3 @@ export default function Blog() {
     </>
   );
 }
-
-// export async function getServerSideProps() {
-//   const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/posts`, {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   });
-//   const allPosts = await res.json();
-
-//   return {
-//     props: { allPosts: allPosts.data },
-//   };
-// }
