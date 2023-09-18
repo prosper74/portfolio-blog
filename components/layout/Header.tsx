@@ -138,18 +138,18 @@ export function Header() {
 
               <li>
                 <Link
-                  href="/#services"
+                  href="/designs"
                   scroll={false}
                   className="flex items-center flex-col hover:text-primary"
                 >
                   <Image
-                    src="/assets/icons/services_icon.svg"
+                    src="/assets/icons/graphics_icon.svg"
                     alt="user icon"
                     width={25}
                     height={25}
                     className="md:hidden"
                   />
-                  Services
+                  Designs
                 </Link>
               </li>
 
