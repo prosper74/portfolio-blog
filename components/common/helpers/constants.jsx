@@ -403,5 +403,18 @@ export const photos = [
     title: "Probus Logistics Services",
     width: 720,
     height: 720
+  },
+  {
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695128186/club_party_zdoxfv.jpg",
+    title: "NFL Night club party",
+    width: 720,
+    height: 720
+  }
+  ,
+  {
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695151959/car_rentals_3_r7phur.jpg",
+    title: "Lunch Logistics Car Rental Service",
+    width: 720,
+    height: 720
   }
 ];
