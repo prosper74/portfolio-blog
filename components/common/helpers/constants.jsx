@@ -351,6 +351,12 @@ export const TestimonialData = [
 
 export const photos = [
   {
+    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695160726/car_rentals_4_pf71ti.jpg",
+    title: "Lunch Logistics Car Rental Service",
+    width: 720,
+    height: 720
+  },
+  {
     src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg",
     title: "Lunch Logistics Car Rental Service",
     width: 720,
