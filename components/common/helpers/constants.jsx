@@ -351,76 +351,93 @@ export const TestimonialData = [
 
 export const photos = [
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695160726/car_rentals_4_pf71ti.jpg",
-    title: "Lunch Logistics Car Rental Service",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695160726/car_rentals_4_pf71ti.jpg',
+    title: 'Lunch Logistics Car Rental Service',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg",
-    title: "Lunch Logistics Car Rental Service",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg',
+    title: 'Lunch Logistics Car Rental Service',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695035020/favour_foods_asrjey.jpg",
-    title: "Favour Foods",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695239001/car_rentals_6_sv6ztd.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695239001/car_rentals_5_raoacl.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695239001/car_rentals_7_aoro3x.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695035020/favour_foods_asrjey.jpg',
+    title: 'Favour Foods',
     width: 1740,
-    height: 2480
+    height: 2480,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695072773/kpp_design_ligb0k.jpg",
-    title: "Kings Place Parish Program",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695072773/kpp_design_ligb0k.jpg',
+    title: 'Kings Place Parish Program',
     width: 1740,
-    height: 2480
+    height: 2480,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695071961/car_rentals_2_f2idnl.jpg",
-    title: "Lunch Logistics Car Rental Service",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695071961/car_rentals_2_f2idnl.jpg',
+    title: 'Lunch Logistics Car Rental Service',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695072782/smhos_nog_s95k5e.jpg",
-    title: "Salvation Ministries - 5 Nights of Glory",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695072782/smhos_nog_s95k5e.jpg',
+    title: 'Salvation Ministries - 5 Nights of Glory',
     width: 2480,
-    height: 1740
+    height: 1740,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078436/bummi_design_ni4bjr.jpg",
-    title: "Physical Makeup Beauty Classes",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695078436/bummi_design_ni4bjr.jpg',
+    title: 'Physical Makeup Beauty Classes',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078441/daves_treat_burger_s5bwfg.jpg",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695078441/daves_treat_burger_s5bwfg.jpg',
     title: "Dave's Treat Burger",
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078451/probus_logistics_1_enyoig.jpg",
-    title: "Probus Logistics Services",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695078451/probus_logistics_1_enyoig.jpg',
+    title: 'Probus Logistics Services',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695078458/probus_logistics_2_bzbuzu.jpg",
-    title: "Probus Logistics Services",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695078458/probus_logistics_2_bzbuzu.jpg',
+    title: 'Probus Logistics Services',
     width: 720,
-    height: 720
+    height: 720,
   },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695128186/club_party_zdoxfv.jpg",
-    title: "NFL Night club party",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695128186/club_party_zdoxfv.jpg',
+    title: 'NFL Night club party',
     width: 720,
-    height: 720
-  }
-  ,
+    height: 720,
+  },
   {
-    src: "https://res.cloudinary.com/prosper-dev/image/upload/v1695151959/car_rentals_3_r7phur.jpg",
-    title: "Lunch Logistics Car Rental Service",
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695151959/car_rentals_3_r7phur.jpg',
+    title: 'Lunch Logistics Car Rental Service',
     width: 720,
-    height: 720
-  }
+    height: 720,
+  },
 ];
