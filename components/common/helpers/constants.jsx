@@ -351,6 +351,12 @@ export const TestimonialData = [
 
 export const photos = [
   {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394029/favour_foods_post_xsrbkl.jpg',
+    title: 'Favour Meals',
+    width: 720,
+    height: 720,
+  },
+  {
     src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695160726/car_rentals_4_pf71ti.jpg',
     title: 'Lunch Logistics Car Rental Service',
     width: 720,
@@ -358,6 +364,54 @@ export const photos = [
   },
   {
     src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695029418/car_rentals_1_yylzts.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394029/post_five_wjebox.jpg',
+    title: 'Daves Treat',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394028/post_eight_okicyr.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394028/post_four_c7unon.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394027/post_six_tsjmjd.jpg',
+    title: 'Lunch Logistics Car Rental Service',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394027/post_one_qx8baf.jpg',
+    title: 'Metrovatech',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394027/post_nine_srpofq.jpg',
+    title: 'Daves Treat',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394027/post_three_zhcnjj.jpg',
+    title: 'Daves Treat',
+    width: 720,
+    height: 720,
+  },
+  {
+    src: 'https://res.cloudinary.com/prosper-dev/image/upload/v1695394027/post_two_omfwuq.jpg',
     title: 'Lunch Logistics Car Rental Service',
     width: 720,
     height: 720,
