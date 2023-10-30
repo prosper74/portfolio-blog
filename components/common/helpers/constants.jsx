@@ -215,6 +215,16 @@ export const PortfolioData = [
   },
   {
     id: 2,
+    img: '/assets/safe_haven.jpg',
+    title: 'Safe Haven',
+    subtitle: 'Personal Project',
+    description:
+      'A real estate website, built with Go and NextJS. In this project I learnt how to setup NextJS with typescript, redux, tailwindcss, eslint, Jest, Prettier. I also learnt how to; write test with Jest and React testing library, use cloudinary to store and retrieve images, use zod for form validation, use NextJS static/dynamic props, and more...',
+    link: 'https://go-real-estate-app.vercel.app/',
+    githubLink: 'https://github.com/prosper74/Go-real-estate-app',
+  },
+  {
+    id: 3,
     img: '/assets/booking_app.png',
     title: 'Booking App',
     subtitle: 'Personal Project',
@@ -222,16 +232,6 @@ export const PortfolioData = [
       'This is an Hotel Booking and Reservation app, developed with Go, HTML and Bootstrap. Developing this app, I learnt the concepts of backend development, Go programming language, Authentication, security, Request tokens, sessions, routing, Postgres, Database design  and management, setting DB migration files, and more...',
     link: 'https://go-booking.onrender.com',
     githubLink: 'https://github.com/prosper74/booking-project',
-  },
-  {
-    id: 3,
-    img: '/assets/safe_haven.jpg',
-    title: 'Safe Haven',
-    subtitle: 'Personal Project',
-    description:
-      'A real estate website, built with NextJS and Strapi. In this project I learnt how to setup NextJS with typescript, redux, tailwindcss, eslint, Jest, Prettier. I also learnt how to; write test with Jest and React testing library, use cloudinary to store and retrieve images, use zod for form validation, use NextJS static/dynamic props, and more...',
-    link: 'https://safe-haven-fe.vercel.app/',
-    githubLink: 'https://github.com/prosper74/safe-haven-fe',
   },
   {
     id: 4,
